@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    //bar chart
+    <color name="bar_negeri">#19547B</color>
+    <color name="bar_swasta">#FFD89B</color>
 </resources>

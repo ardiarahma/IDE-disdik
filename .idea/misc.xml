@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_main.xml" value="0.2078804347826087" />
-        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_splash_screen.xml" value="0.2078804347826087" />
+        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/drawable/blue_corner.xml" value="0.1235" />
+        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/drawable/gradient_1.xml" value="0.1235" />
+        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/drawable/gradient_2.xml" value="0.1235" />
+        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/drawable/gradient_3.xml" value="0.1235" />
+        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1235" />
+        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/drawable/white_corner.xml" value="0.1235" />
+        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_data_sekolah.xml" value="0.2" />
+        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/slider_img.xml" value="0.2" />
       </map>
     </option>
   </component>
