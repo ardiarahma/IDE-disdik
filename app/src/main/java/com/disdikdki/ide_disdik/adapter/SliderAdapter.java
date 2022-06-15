@@ -1,4 +1,4 @@
-package com.disdikdki.ide_disdik.Adapter;
+package com.disdikdki.ide_disdik.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;

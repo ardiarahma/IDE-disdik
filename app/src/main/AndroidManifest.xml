@@ -12,6 +12,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IDEdisdik">
         <activity
+            android:name=".FindByDistrictActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FindByNameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SekolahP1000Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SekolahJakbarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SekolahJaktimActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SekolahJakselActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SekolahJakutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SekolahJakpusActivity"
+            android:exported="false" />
+        <activity
             android:name=".DataSkpdActivity"
             android:exported="false" />
         <activity
