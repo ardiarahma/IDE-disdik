@@ -5,11 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.ImageView;
 
 public class SekolahJakutActivity extends AppCompatActivity {
 
     ImageView back;
+    WebView statSekolah;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,14 @@ public class SekolahJakutActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        statSekolah = findViewById(R.id.chart);
+        statSekolah.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=38&standalone=1&height=300");
+        WebSettings webSettings = statSekolah.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setBuiltInZoomControls(true);
+        webSettings.setLoadWithOverviewMode(true);
+
 
 
     }

@@ -9,8 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginBottom="@dimen/_20sdp">
+        android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -34,7 +33,7 @@
                 android:layout_marginBottom="@dimen/_5sdp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:gravity="center"
-                android:text="nama_kota"
+                android:text="Kota Adm. Jakarta Barat"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_15ssp" />
@@ -43,7 +42,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/pc_district"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_350sdp"
+            android:layout_height="@dimen/_280sdp"
             android:layout_margin="@dimen/_10sdp"
             app:cardCornerRadius="@dimen/_10sdp">
 
@@ -67,13 +66,19 @@
                     android:layout_marginTop="@dimen/_5sdp"
                     android:fontFamily="sans-serif-condensed-light"
                     android:gravity="center"
-                    android:text="Sumber : Dapodik - 13 Januari 2022"
+                    android:text="Cut Off Juni 2022"
                     android:textSize="@dimen/_12ssp" />
 
                 <WebView
                     android:id="@+id/chart"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_250sdp" />
+                    android:layout_height="@dimen/_180sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_27sdp"/>
 
 
             </LinearLayout>

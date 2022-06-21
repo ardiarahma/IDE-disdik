@@ -41,7 +41,7 @@ public class DataSekolahActivity extends AppCompatActivity {
         jakpus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DataSekolahActivity.this, FindByDistrictActivity.class);
+                Intent intent = new Intent(DataSekolahActivity.this, SekolahJakpusActivity.class);
                 startActivity(intent);
             }
         });
@@ -82,7 +82,7 @@ public class DataSekolahActivity extends AppCompatActivity {
             }
         });
 
-        p1000 = findViewById(R.id.btn_p1000);
+        p1000 = findViewById(R.id.btn_seribu);
         p1000.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
