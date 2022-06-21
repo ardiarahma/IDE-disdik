@@ -12,43 +12,49 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IDEdisdik">
         <activity
-            android:name=".FindByDistrictActivity"
+            android:name=".activities.DataSudinActivity"
             android:exported="false" />
         <activity
-            android:name=".FindByNameActivity"
+            android:name=".activities.DataDinasActivity"
             android:exported="false" />
         <activity
-            android:name=".SekolahP1000Activity"
+            android:name=".activities.FindByDistrictActivity"
             android:exported="false" />
         <activity
-            android:name=".SekolahJakbarActivity"
+            android:name=".activities.FindByNameActivity"
             android:exported="false" />
         <activity
-            android:name=".SekolahJaktimActivity"
+            android:name=".activities.SekolahP1000Activity"
             android:exported="false" />
         <activity
-            android:name=".SekolahJakselActivity"
+            android:name=".activities.SekolahJakbarActivity"
             android:exported="false" />
         <activity
-            android:name=".SekolahJakutActivity"
+            android:name=".activities.SekolahJaktimActivity"
             android:exported="false" />
         <activity
-            android:name=".SekolahJakpusActivity"
+            android:name=".activities.SekolahJakselActivity"
             android:exported="false" />
         <activity
-            android:name=".DataSkpdActivity"
+            android:name=".activities.SekolahJakutActivity"
             android:exported="false" />
         <activity
-            android:name=".DataRekapActivity"
+            android:name=".activities.SekolahJakpusActivity"
             android:exported="false" />
         <activity
-            android:name=".DataSekolahActivity"
+            android:name=".activities.DataSkpdActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.DataRekapActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".activities.DataSekolahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

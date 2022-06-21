@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DataSkpdActivity">
+    tools:context=".activities.DataSkpdActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -137,10 +137,11 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/btn_dataDinas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="@dimen/_10sdp"
-                android:layout_margin="@dimen/_5sdp">
+                android:layout_margin="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -168,12 +169,14 @@
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/btn_dataSudin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="@dimen/_10sdp"
                 android:layout_marginLeft="@dimen/_5sdp"
-                android:layout_marginRight="@dimen/_5sdp">
+                android:layout_marginRight="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -202,13 +205,15 @@
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/btn_dataUPT"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="@dimen/_10sdp"
                 android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:layout_marginRight="@dimen/_5sdp"
-                android:layout_marginTop="@dimen/_5sdp">
+                app:cardCornerRadius="@dimen/_10sdp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"

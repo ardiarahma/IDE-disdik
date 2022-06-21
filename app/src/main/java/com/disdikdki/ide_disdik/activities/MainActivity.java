@@ -1,4 +1,4 @@
-package com.disdikdki.ide_disdik;
+package com.disdikdki.ide_disdik.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -9,18 +9,11 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-import com.disdikdki.ide_disdik.adapter.SliderAdapter;
-import com.github.mikephil.charting.charts.BarChart;
-import com.github.mikephil.charting.components.XAxis;
-import com.github.mikephil.charting.data.BarData;
-import com.github.mikephil.charting.data.BarDataSet;
-import com.github.mikephil.charting.data.BarEntry;
-import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
+import com.disdikdki.ide_disdik.R;
+import com.disdikdki.ide_disdik.network.adapter.SliderAdapter;
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 

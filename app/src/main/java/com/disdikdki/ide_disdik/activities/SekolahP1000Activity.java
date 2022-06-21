@@ -1,4 +1,4 @@
-package com.disdikdki.ide_disdik;
+package com.disdikdki.ide_disdik.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.ImageView;
+
+import com.disdikdki.ide_disdik.R;
 
 public class SekolahP1000Activity extends AppCompatActivity {
 

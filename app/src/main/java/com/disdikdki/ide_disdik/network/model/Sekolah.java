@@ -1,4 +1,4 @@
-package com.disdikdki.ide_disdik.model;
+package com.disdikdki.ide_disdik.network.model;
 
 public class Sekolah {
 
