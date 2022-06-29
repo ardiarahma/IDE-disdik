@@ -1,4 +1,4 @@
-package com.disdikdki.ide_disdik.activities;
+package com.disdikdki.ide_disdik;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,32 +9,30 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.ImageView;
 
-import com.disdikdki.ide_disdik.R;
-
-public class SekolahJakselActivity extends AppCompatActivity {
-
+public class SekolahJakbarActivity extends AppCompatActivity {
     ImageView back;
     WebView statSekolah;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sekolah_jaksel);
+        setContentView(R.layout.activity_sekolah_jakbar);
 
         back = findViewById(R.id.btn_back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SekolahJakselActivity.this, DataSekolahActivity.class);
+                Intent intent = new Intent(SekolahJakbarActivity.this, DataSekolahActivity.class);
                 startActivity(intent);
             }
         });
 
         statSekolah = findViewById(R.id.chart);
-        statSekolah.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=35&standalone=1&height=300");
+        statSekolah.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=36&standalone=1&height=300");
         WebSettings webSettings = statSekolah.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webSettings.setBuiltInZoomControls(true);
         webSettings.setLoadWithOverviewMode(true);
+
     }
 }

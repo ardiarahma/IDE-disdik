@@ -1,4 +1,4 @@
-package com.disdikdki.ide_disdik.activities;
+package com.disdikdki.ide_disdik;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,9 +9,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.ImageView;
 
-import com.disdikdki.ide_disdik.R;
-
-public class SekolahJaktimActivity extends AppCompatActivity {
+public class SekolahJakutActivity extends AppCompatActivity {
 
     ImageView back;
     WebView statSekolah;
@@ -19,22 +17,25 @@ public class SekolahJaktimActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sekolah_jaktim);
+        setContentView(R.layout.activity_sekolah_jakut);
 
         back = findViewById(R.id.btn_back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SekolahJaktimActivity.this, DataSekolahActivity.class);
+                Intent intent = new Intent(SekolahJakutActivity.this, DataSekolahActivity.class);
                 startActivity(intent);
             }
         });
 
         statSekolah = findViewById(R.id.chart);
-        statSekolah.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=37&standalone=1&height=300");
+        statSekolah.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=38&standalone=1&height=300");
         WebSettings webSettings = statSekolah.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webSettings.setBuiltInZoomControls(true);
         webSettings.setLoadWithOverviewMode(true);
+
+
+
     }
 }

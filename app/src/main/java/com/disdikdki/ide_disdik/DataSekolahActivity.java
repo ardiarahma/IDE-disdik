@@ -1,4 +1,4 @@
-package com.disdikdki.ide_disdik.activities;
+package com.disdikdki.ide_disdik;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,13 +8,13 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import com.disdikdki.ide_disdik.R;
-
 public class DataSekolahActivity extends AppCompatActivity {
 
     ImageView back;
     View jakpus, jakut, jakbar, jaksel, jaktim, p1000;
     RelativeLayout searchByName;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,5 +92,7 @@ public class DataSekolahActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
     }
 }

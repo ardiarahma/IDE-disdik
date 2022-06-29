@@ -1,4 +1,4 @@
-package com.disdikdki.ide_disdik.activities;
+package com.disdikdki.ide_disdik;
 
 import androidx.appcompat.app.AppCompatActivity;
 

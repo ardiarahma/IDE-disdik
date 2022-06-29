@@ -1,4 +1,4 @@
-package com.disdikdki.ide_disdik.activities;
+package com.disdikdki.ide_disdik;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageView;
-
-import com.disdikdki.ide_disdik.R;
 
 public class FindByDistrictActivity extends AppCompatActivity {
 

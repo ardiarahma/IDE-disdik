@@ -1,4 +1,4 @@
-package com.disdikdki.ide_disdik.activities;
+package com.disdikdki.ide_disdik;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -7,8 +7,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-
-import com.disdikdki.ide_disdik.R;
 
 public class DataSkpdActivity extends AppCompatActivity {
 
@@ -48,6 +46,12 @@ public class DataSkpdActivity extends AppCompatActivity {
         });
 
         upt = findViewById(R.id.btn_dataUPT);
-
+        upt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DataSkpdActivity.this, DataUptActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -1,4 +1,4 @@
-package com.disdikdki.ide_disdik.activities;
+package com.disdikdki.ide_disdik;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,6 @@ import android.os.Handler;
 import android.widget.ImageView;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.disdikdki.ide_disdik.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 

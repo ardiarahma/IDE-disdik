@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.FindByNameActivity">
+    tools:context=".FindByNameActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -105,11 +105,17 @@
             </LinearLayout>
         </LinearLayout>
 
-<!--        <androidx.recyclerview.widget.RecyclerView-->
-<!--            android:id="@+id/rv_sekolah"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_margin="@dimen/_5sdp"/>-->
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="untuk response code"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_sekolah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp" />
 
     </LinearLayout>
 

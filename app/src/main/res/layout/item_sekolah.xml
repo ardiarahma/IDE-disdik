@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="@dimen/_20sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:elevation="@dimen/_7sdp">
 
     <LinearLayout
+        android:id="@+id/itemSekolah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_10sdp"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tv_itemSekolah"
+            android:id="@+id/tv_namaSekolah"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"
