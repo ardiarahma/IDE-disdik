@@ -2,6 +2,7 @@ package com.disdikdki.ide_disdik.api;
 
 import com.disdikdki.ide_disdik.model.ListSekolahResponse;
 import com.disdikdki.ide_disdik.model.PejabatResponse;
+import com.disdikdki.ide_disdik.model.Periode;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -22,7 +23,7 @@ public interface BaseApi {
     @Headers("Content-Type: application/json")
     @POST("pejabat")
     Call<PejabatResponse> getPejabat(
-            @Body String periode_id
+            @Body() Periode periode_id
     );
 
 }

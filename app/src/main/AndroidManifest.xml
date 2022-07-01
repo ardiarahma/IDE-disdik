@@ -12,6 +12,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IDEdisdik">
         <activity
+            android:name=".DataDinasPrasardikActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataDinasSmkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataDinasSmpsmaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataDinasSdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataDinasPaudActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataDinasPpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataDinasPtkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataDinasSekdisActivity"
+            android:exported="false" />
+        <activity
             android:name=".DataUptActivity"
             android:exported="false" />
         <activity

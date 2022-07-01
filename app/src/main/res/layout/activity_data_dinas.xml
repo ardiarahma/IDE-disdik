@@ -63,7 +63,7 @@
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
-                    android:background="@drawable/esmelon_1"
+                    android:background="@drawable/melon_1"
                     android:orientation="vertical">
 
                     <TextView
@@ -73,8 +73,8 @@
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginRight="@dimen/_15sdp"
                         android:fontFamily="sans-serif-condensed-medium"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="Nahdiana"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
                         android:textSize="@dimen/_14ssp" />
 
                     <TextView
@@ -84,8 +84,8 @@
                         android:layout_marginTop="@dimen/_2sdp"
                         android:layout_marginRight="@dimen/_15sdp"
                         android:fontFamily="sans-serif-condensed-light"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="196908061992012001"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
                         android:textSize="@dimen/_10ssp" />
 
                     <TextView
@@ -95,8 +95,8 @@
                         android:layout_marginTop="@dimen/_2sdp"
                         android:layout_marginRight="@dimen/_15sdp"
                         android:fontFamily="sans-serif-condensed-light"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="Pembina Tk.I (IV/b)"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="...."
                         android:textSize="@dimen/_10ssp" />
 
                 </LinearLayout>
@@ -116,7 +116,7 @@
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
-                    android:background="@drawable/esmelon_2"
+                    android:background="@drawable/melon_2"
                     android:orientation="vertical">
 
                     <TextView
@@ -126,8 +126,8 @@
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginRight="@dimen/_15sdp"
                         android:fontFamily="sans-serif-condensed-medium"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="Purwosusilo"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text=".."
                         android:textSize="@dimen/_14ssp" />
 
                     <TextView
@@ -137,8 +137,8 @@
                         android:layout_marginTop="@dimen/_2sdp"
                         android:layout_marginRight="@dimen/_15sdp"
                         android:fontFamily="sans-serif-condensed-light"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="196707241997031005"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text=".."
                         android:textSize="@dimen/_10ssp" />
 
                     <TextView
@@ -148,7 +148,7 @@
                         android:layout_marginTop="@dimen/_2sdp"
                         android:layout_marginRight="@dimen/_15sdp"
                         android:fontFamily="sans-serif-condensed-light"
-                        android:paddingStart="@dimen/_80sdp"
+                        android:paddingStart="@dimen/_15sdp"
                         android:text="...."
                         android:textSize="@dimen/_10ssp" />
 
@@ -177,7 +177,7 @@
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
-                    android:background="@drawable/esmelon_1"
+                    android:background="@drawable/melon_1"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -186,33 +186,36 @@
                         android:layout_weight="0.7"
                         android:orientation="vertical">
                         <TextView
+                            android:id="@+id/tv_sekdis"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_10sdp"
                             android:layout_marginRight="@dimen/_15sdp"
                             android:fontFamily="sans-serif-condensed-medium"
-                            android:paddingStart="@dimen/_80sdp"
-                            android:text="Agus Ramdani, S.Sos., M.AP."
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="...."
                             android:textSize="@dimen/_14ssp" />
 
                         <TextView
+                            android:id="@+id/tv_nipSekdis"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_2sdp"
                             android:layout_marginRight="@dimen/_15sdp"
                             android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_80sdp"
-                            android:text="197908141998031001"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="..."
                             android:textSize="@dimen/_10ssp" />
 
                         <TextView
+                            android:id="@+id/tv_pangkatSekdis"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_2sdp"
                             android:layout_marginRight="@dimen/_15sdp"
                             android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_80sdp"
-                            android:text="Pembina (IV/a)"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="..."
                             android:textSize="@dimen/_10ssp" />
 
                     </LinearLayout>
@@ -250,7 +253,7 @@
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
-                    android:background="@drawable/esmelon_2"
+                    android:background="@drawable/melon_2"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -259,33 +262,36 @@
                         android:layout_weight="0.7"
                         android:orientation="vertical">
                         <TextView
+                            android:id="@+id/tv_ptk"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_10sdp"
                             android:layout_marginRight="@dimen/_15sdp"
                             android:fontFamily="sans-serif-condensed-medium"
-                            android:paddingStart="@dimen/_80sdp"
-                            android:text="Muh. Roji, M.Pd."
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="..."
                             android:textSize="@dimen/_14ssp" />
 
                         <TextView
+                            android:id="@+id/tv_nipPtk"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_2sdp"
                             android:layout_marginRight="@dimen/_15sdp"
                             android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_80sdp"
-                            android:text="196712082000031002"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="..."
                             android:textSize="@dimen/_10ssp" />
 
                         <TextView
+                            android:id="@+id/tv_pangkatPtk"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_2sdp"
                             android:layout_marginRight="@dimen/_15sdp"
                             android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_80sdp"
-                            android:text="Pembina Tk.I (IV/b)"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="..."
                             android:textSize="@dimen/_10ssp" />
                     </LinearLayout>
 
@@ -322,38 +328,63 @@
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
-                    android:background="@drawable/esmelon_3"
-                    android:orientation="vertical">
+                    android:background="@drawable/melon_3"
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="Rita Marina"
-                        android:textSize="@dimen/_14ssp" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_pp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="..."
+                            android:textSize="@dimen/_14ssp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:fontFamily="sans-serif-condensed-light"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="...."
-                        android:textSize="@dimen/_10ssp" />
+                        <TextView
+                            android:id="@+id/tv_nipPp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="..."
+                            android:textSize="@dimen/_10ssp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:fontFamily="sans-serif-condensed-light"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="......"
-                        android:textSize="@dimen/_10ssp" />
+                        <TextView
+                            android:id="@+id/tv_pangkatPp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="..."
+                            android:textSize="@dimen/_10ssp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/btn_pp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
 
@@ -372,40 +403,67 @@
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
-                    android:background="@drawable/esmelon_1"
-                    android:orientation="vertical">
+                    android:background="@drawable/melon_1"
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="Dra. Heni Nurhayani"
-                        android:textSize="@dimen/_14ssp" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_paud"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="...."
+                            android:textSize="@dimen/_14ssp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:fontFamily="sans-serif-condensed-light"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="196808011995032004"
-                        android:textSize="@dimen/_10ssp" />
+                        <TextView
+                            android:id="@+id/tv_nipPaud"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="..."
+                            android:textSize="@dimen/_10ssp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:fontFamily="sans-serif-condensed-light"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="Penata Tk. I (III/d)"
-                        android:textSize="@dimen/_10ssp" />
+                        <TextView
+                            android:id="@+id/tv_pangkatPaud"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="..."
+                            android:textSize="@dimen/_10ssp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/btn_paud"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
+
 
                 <TextView
                     android:layout_width="match_parent"
@@ -422,40 +480,67 @@
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
-                    android:background="@drawable/esmelon_2"
-                    android:orientation="vertical">
+                    android:background="@drawable/melon_2"
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="Satiman"
-                        android:textSize="@dimen/_14ssp" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_sd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="...."
+                            android:textSize="@dimen/_14ssp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:fontFamily="sans-serif-condensed-light"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="........"
-                        android:textSize="@dimen/_10ssp" />
+                        <TextView
+                            android:id="@+id/tv_nipSd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="..."
+                            android:textSize="@dimen/_10ssp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:fontFamily="sans-serif-condensed-light"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="..........."
-                        android:textSize="@dimen/_10ssp" />
+                        <TextView
+                            android:id="@+id/tv_pangkatSd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="..."
+                            android:textSize="@dimen/_10ssp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/btn_sd"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
+
 
                 <TextView
                     android:layout_width="match_parent"
@@ -472,40 +557,67 @@
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
-                    android:background="@drawable/esmelon_3"
-                    android:orientation="vertical">
+                    android:background="@drawable/melon_3"
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="Drs. Putoyo HS, M.Pd."
-                        android:textSize="@dimen/_14ssp" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_smpsma"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="...."
+                            android:textSize="@dimen/_14ssp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:fontFamily="sans-serif-condensed-light"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="196509121988111002"
-                        android:textSize="@dimen/_10ssp" />
+                        <TextView
+                            android:id="@+id/tv_nipSmpsma"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="..."
+                            android:textSize="@dimen/_10ssp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:fontFamily="sans-serif-condensed-light"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="Pembina (IV/a)"
-                        android:textSize="@dimen/_10ssp" />
+                        <TextView
+                            android:id="@+id/tv_pangkatSmpsma"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="..."
+                            android:textSize="@dimen/_10ssp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/btn_smpsma"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
+
 
                 <TextView
                     android:layout_width="match_parent"
@@ -522,39 +634,67 @@
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
-                    android:background="@drawable/esmelon_1"
-                    android:orientation="vertical">
+                    android:background="@drawable/melon_1"
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="Diding Wahyudin, S.Pd, M.Si"
-                        android:textSize="@dimen/_14ssp" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_smk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="...."
+                            android:textSize="@dimen/_14ssp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:fontFamily="sans-serif-condensed-light"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="197206151998021001"
-                        android:textSize="@dimen/_10ssp" />
+                        <TextView
+                            android:id="@+id/tv_nipSmk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="..."
+                            android:textSize="@dimen/_10ssp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:fontFamily="sans-serif-condensed-light"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="Pembina Tk.I  (IV/b)"
-                        android:textSize="@dimen/_10ssp" />
+                        <TextView
+                            android:id="@+id/tv_pangkatSmk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="..."
+                            android:textSize="@dimen/_10ssp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/btn_smk"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+                    </LinearLayout>
+
+
                 </LinearLayout>
+
 
                 <TextView
                     android:layout_width="match_parent"
@@ -571,38 +711,67 @@
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
-                    android:background="@drawable/esmelon_2">
+                    android:background="@drawable/melon_2"
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="Budiyono"
-                        android:textSize="@dimen/_14ssp" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_prasardik"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="...."
+                            android:textSize="@dimen/_14ssp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:fontFamily="sans-serif-condensed-light"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="196810171998031005"
-                        android:textSize="@dimen/_10ssp" />
+                        <TextView
+                            android:id="@+id/tv_nipPrasardik"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="..."
+                            android:textSize="@dimen/_10ssp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_2sdp"
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:fontFamily="sans-serif-condensed-light"
-                        android:paddingStart="@dimen/_80sdp"
-                        android:text="Pembina Tk.I (IV/b)"
-                        android:textSize="@dimen/_10ssp" />
+                        <TextView
+                            android:id="@+id/tv_pangkatPrasardik"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:text="..."
+                            android:textSize="@dimen/_10ssp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/btn_prasardik"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+                    </LinearLayout>
+
+
                 </LinearLayout>
+
 
             </LinearLayout>
 

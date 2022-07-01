@@ -13,6 +13,10 @@ public class Pejabat {
     @Expose
     private String eselon;
 
+    @SerializedName("jabatan")
+    @Expose
+    private String jabatan;
+
     @SerializedName("nama")
     @Expose
     private String nama;
@@ -25,12 +29,18 @@ public class Pejabat {
     @Expose
     private String pangkat;
 
-    public Pejabat(String id, String eselon, String nama, String nip, String pangkat) {
+    @SerializedName("unit")
+    @Expose
+    private String unit;
+
+    public Pejabat(String id, String eselon, String jabatan, String nama, String nip, String pangkat, String unit) {
         this.id = id;
         this.eselon = eselon;
+        this.jabatan = jabatan;
         this.nama = nama;
         this.nip = nip;
         this.pangkat = pangkat;
+        this.unit = unit;
     }
 
     public String getId() {
@@ -47,6 +57,14 @@ public class Pejabat {
 
     public void setEselon(String eselon) {
         this.eselon = eselon;
+    }
+
+    public String getJabatan() {
+        return jabatan;
+    }
+
+    public void setJabatan(String jabatan) {
+        this.jabatan = jabatan;
     }
 
     public String getNama() {
@@ -72,4 +90,13 @@ public class Pejabat {
     public void setPangkat(String pangkat) {
         this.pangkat = pangkat;
     }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
+    }
 }
+
