@@ -4,18 +4,34 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.webkit.CookieManager;
 import android.webkit.CookieSyncManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.disdikdki.ide_disdik.api.RetrofitClient;
+import com.disdikdki.ide_disdik.model.Rekap;
+import com.disdikdki.ide_disdik.model.RekapResponse;
+
+import java.util.ArrayList;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class DataRekapActivity extends AppCompatActivity {
 
     ImageView back;
     WebView pchartSekolah, pchartPesdik, pchartGuru, pchartTendik,
             bchartSekolahWil, bchartPesdikWil, bchartGuruWil, bchartTendikWil;
+    TextView jumlahSekolah, jumlahPesdik, jumlahGuru, jumlahTendik;
+
+    ArrayList<Rekap> rekaps;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +44,41 @@ public class DataRekapActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(DataRekapActivity.this, MainActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        jumlahSekolah = findViewById(R.id.tv_jumlahSekolah);
+        jumlahPesdik = findViewById(R.id.tv_jumlahPesdik);
+        jumlahGuru = findViewById(R.id.tv_jumlahGuru);
+        jumlahTendik = findViewById(R.id.tv_jumlahTendik);
+
+        Call<RekapResponse> call = RetrofitClient
+                .getInstance()
+                .getAPI()
+                .getRekap();
+
+        call.enqueue(new Callback<RekapResponse>() {
+            @Override
+            public void onResponse(Call<RekapResponse> call, Response<RekapResponse> response) {
+                RekapResponse rekapResponse = response.body();
+                Log.d("CHECK ISI DARI RESPONSE BODY", "ini dia --> " + response.body());
+                if (rekapResponse != null && rekapResponse.getError() == null){
+                    Log.i("debug", "onResponse : SUCCESSFUL");
+                    rekaps = rekapResponse.getRekapArrayList();
+                    jumlahSekolah.setText(String.valueOf(rekaps.get(0).getJumlahSekolah()));
+                    jumlahPesdik.setText(String.valueOf(rekaps.get(0).getJumlahPesdik()));
+                    jumlahGuru.setText(String.valueOf(rekaps.get(0).getJumlahGuru()));
+                    jumlahTendik.setText(String.valueOf(rekaps.get(0).getJumlahTendik()));
+                }else {
+                    Log.i("debug", "onResponse: FAILED");
+                    Toast.makeText(getApplicationContext(), "Gagal dalam mengambil data", Toast.LENGTH_LONG).show();
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<RekapResponse> call, Throwable t) {
+
             }
         });
 

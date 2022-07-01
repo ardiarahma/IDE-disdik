@@ -1,5 +1,6 @@
 package com.disdikdki.ide_disdik.api;
 
+import com.disdikdki.ide_disdik.model.RekapResponse;
 import com.disdikdki.ide_disdik.model.SekolahBody;
 import com.disdikdki.ide_disdik.model.SekolahResponse;
 import com.disdikdki.ide_disdik.model.PejabatResponse;
@@ -25,6 +26,10 @@ public interface BaseApi {
     Call<PejabatResponse> getPejabat(
             @Body() Periode periode_id
     );
+
+    @Headers("Content-Type: application/json")
+    @POST("rekap")
+    Call<RekapResponse> getRekap();
 
     //Jakpus
     @Headers("Content-Type: application/json")
