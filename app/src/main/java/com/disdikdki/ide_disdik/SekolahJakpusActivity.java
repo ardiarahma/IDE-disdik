@@ -15,7 +15,7 @@ public class SekolahJakpusActivity extends AppCompatActivity {
 
     ImageView back;
     WebView statSekolah;
-    CardView btnPaud;
+    CardView btnPaud, btnPkbm, btnSd, btnSmp, btnSma, btnSmk;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +45,16 @@ public class SekolahJakpusActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnPkbm = findViewById(R.id.btn_pkbm);
+        btnPkbm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SekolahJakpusActivity.this, JpPkbmActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

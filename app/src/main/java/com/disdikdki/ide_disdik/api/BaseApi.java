@@ -33,4 +33,10 @@ public interface BaseApi {
             @Body() SekolahBody sekolahBody
     );
 
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getPkbmJp(
+            @Body() SekolahBody sekolahBody
+    );
+
 }
