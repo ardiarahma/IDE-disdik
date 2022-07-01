@@ -5,11 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.CookieManager;
+import android.webkit.CookieSyncManager;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.ImageView;
 
 public class DataRekapActivity extends AppCompatActivity {
 
     ImageView back;
+    WebView pchartSekolah, pchartPesdik, pchartGuru, pchartTendik,
+            bchartSekolahWil, bchartPesdikWil, bchartGuruWil, bchartTendikWil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,5 +31,61 @@ public class DataRekapActivity extends AppCompatActivity {
             }
         });
 
+        CookieSyncManager.createInstance(this);
+        CookieManager cookieManager = CookieManager.getInstance();
+        cookieManager.removeAllCookie();
+        cookieManager.setAcceptCookie(false);
+
+        pchartSekolah = findViewById(R.id.pchart_sekolah);
+        pchartSekolah.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=42&standalone=1&height=300");
+        WebSettings webSettings = pchartSekolah.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setBuiltInZoomControls(true);
+        webSettings.setLoadWithOverviewMode(true);
+
+        pchartPesdik = findViewById(R.id.pchart_pesdik);
+        pchartPesdik.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=43&standalone=1&height=300");
+        WebSettings webSettings1 = pchartPesdik.getSettings();
+        webSettings1.setJavaScriptEnabled(true);
+        webSettings1.setBuiltInZoomControls(true);
+        webSettings1.setLoadWithOverviewMode(true);
+
+        pchartGuru = findViewById(R.id.pchart_guru);
+        pchartGuru.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=44&standalone=1&height=300");
+        WebSettings webSettings2 = pchartGuru.getSettings();
+        webSettings2.setJavaScriptEnabled(true);
+        webSettings2.setBuiltInZoomControls(true);
+        webSettings2.setLoadWithOverviewMode(true);
+
+        pchartTendik = findViewById(R.id.pchart_tendik);
+        pchartSekolah.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=47&standalone=1&height=300");
+        WebSettings webSettings3 = pchartSekolah.getSettings();
+        webSettings3.setJavaScriptEnabled(true);
+        webSettings3.setBuiltInZoomControls(true);
+        webSettings3.setLoadWithOverviewMode(true);
+
+        bchartSekolahWil = findViewById(R.id.bchart_sekolah);
+        bchartSekolahWil.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=45&standalone=1&height=400");
+        WebSettings webSettings4 = bchartSekolahWil.getSettings();
+        webSettings4.setJavaScriptEnabled(true);
+        webSettings4.setBuiltInZoomControls(true);
+
+        bchartPesdikWil = findViewById(R.id.bchart_pesdik);
+        bchartPesdikWil.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=48&standalone=1&height=400");
+        WebSettings webSettings5 = bchartPesdikWil.getSettings();
+        webSettings5.setJavaScriptEnabled(true);
+        webSettings5.setBuiltInZoomControls(true);
+
+        bchartGuruWil = findViewById(R.id.bchart_guru);
+        bchartGuruWil.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=49&standalone=1&height=400");
+        WebSettings webSettings6 = bchartGuruWil.getSettings();
+        webSettings6.setJavaScriptEnabled(true);
+        webSettings6.setBuiltInZoomControls(true);
+
+        bchartTendikWil = findViewById(R.id.bchart_tendik);
+        bchartTendikWil.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=50&standalone=1&height=400");
+        WebSettings webSettings7 = bchartTendikWil.getSettings();
+        webSettings7.setJavaScriptEnabled(true);
+        webSettings7.setBuiltInZoomControls(true);
     }
 }

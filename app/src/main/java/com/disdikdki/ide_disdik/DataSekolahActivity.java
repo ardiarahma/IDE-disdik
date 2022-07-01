@@ -25,8 +25,7 @@ public class DataSekolahActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DataSekolahActivity.this, MainActivity.class);
-                startActivity(intent);
+                onBackPressed();
             }
         });
 

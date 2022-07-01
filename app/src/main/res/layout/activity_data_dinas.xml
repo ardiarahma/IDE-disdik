@@ -32,7 +32,6 @@
                     android:src="@drawable/ic_arrow_back" />
 
                 <TextView
-                    android:id="@+id/tv_districtName"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginBottom="@dimen/_5sdp"
@@ -68,16 +67,18 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/nama_kadis"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginRight="@dimen/_15sdp"
                         android:fontFamily="sans-serif-condensed-medium"
                         android:paddingStart="@dimen/_80sdp"
-                        android:text="Nahdiana, M.Pd."
+                        android:text="Nahdiana"
                         android:textSize="@dimen/_14ssp" />
 
                     <TextView
+                        android:id="@+id/nip_kadis"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_2sdp"
@@ -88,6 +89,7 @@
                         android:textSize="@dimen/_10ssp" />
 
                     <TextView
+                        android:id="@+id/pangkat_kadis"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_2sdp"
@@ -118,6 +120,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/nama_waka"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_10sdp"
@@ -128,6 +131,7 @@
                         android:textSize="@dimen/_14ssp" />
 
                     <TextView
+                        android:id="@+id/nip_waka"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_2sdp"
@@ -138,6 +142,7 @@
                         android:textSize="@dimen/_10ssp" />
 
                     <TextView
+                        android:id="@+id/pangkat_waka"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_2sdp"

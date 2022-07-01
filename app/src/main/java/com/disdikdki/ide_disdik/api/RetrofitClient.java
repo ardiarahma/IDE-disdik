@@ -6,18 +6,20 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.logging.HttpLoggingInterceptor;
+import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 import java.util.concurrent.TimeUnit;
 
 public class RetrofitClient {
 
-    private static final String BASE_URL = "https://dashboard.pusdatikomdik.id/api/v1/";
+    private static final String BASE_URL = "https://api.sidebar.pusdatikomdik.id/ide/";
     private static RetrofitClient mInstance;
     private Retrofit retrofit;
 
     private RetrofitClient(){
         retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
+                .addConverterFactory(ScalarsConverterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }

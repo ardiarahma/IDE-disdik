@@ -6,19 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".SplashScreenActivity">
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/loading_splash_screen" />
 
     <ImageView
         android:id="@+id/ic_logo"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_200sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:src="@drawable/sidebar_logo_komplit" />
+
+    <com.airbnb.lottie.LottieAnimationView
         android:layout_width="@dimen/_150sdp"
         android:layout_height="@dimen/_150sdp"
+        android:layout_below="@+id/ic_logo"
         android:layout_centerInParent="true"
-        android:src="@mipmap/ic_logo" />
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading_anim" />
     <!--    <ImageView-->
 <!--        android:id="@+id/img_bg"-->
 <!--        android:layout_width="wrap_content"-->
