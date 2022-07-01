@@ -26,7 +26,7 @@ public interface BaseApi {
             @Body() Periode periode_id
     );
 
-    //paud-jakpus
+    //Jakpus
     @Headers("Content-Type: application/json")
     @POST("sekolah")
     Call<SekolahResponse> getPaudJp(
@@ -36,6 +36,12 @@ public interface BaseApi {
     @Headers("Content-Type: application/json")
     @POST("sekolah")
     Call<SekolahResponse> getPkbmJp(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSdJp(
             @Body() SekolahBody sekolahBody
     );
 

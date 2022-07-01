@@ -55,6 +55,14 @@ public class SekolahJakpusActivity extends AppCompatActivity {
             }
         });
 
+        btnSd = findViewById(R.id.btn_sd);
+        btnSd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SekolahJakpusActivity.this, JpSdActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
