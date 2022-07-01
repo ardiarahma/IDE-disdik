@@ -1,6 +1,7 @@
 package com.disdikdki.ide_disdik;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,11 +9,13 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 public class SekolahJakpusActivity extends AppCompatActivity {
 
     ImageView back;
     WebView statSekolah;
+    CardView btnPaud;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +26,7 @@ public class SekolahJakpusActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SekolahJakpusActivity.this, DataSekolahActivity.class);
-                startActivity(intent);
+                onBackPressed();
             }
         });
 
@@ -34,5 +36,15 @@ public class SekolahJakpusActivity extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         webSettings.setBuiltInZoomControls(true);
         webSettings.setLoadWithOverviewMode(true);
+
+        btnPaud = findViewById(R.id.btn_paud);
+        btnPaud.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SekolahJakpusActivity.this, JpPaudActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
