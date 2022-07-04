@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_pejabat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Kepala Dinas "
+        android:textSize="@dimen/_15ssp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_73sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:background="@drawable/esmelon_1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_namaPejabat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:paddingStart="@dimen/_80sdp"
+            android:text="Nahdiana"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/tv_nipPejabat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:paddingStart="@dimen/_80sdp"
+            android:text="196908061992012001"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/tv_pangkatPejabat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:paddingStart="@dimen/_80sdp"
+            android:text="Pembina Tk.I (IV/b)"
+            android:textSize="@dimen/_10ssp" />
+
+    </LinearLayout>
+
+</LinearLayout>

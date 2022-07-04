@@ -6,248 +6,262 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.smarteist.autoimageslider.SliderView
-        android:id="@+id/image_slider"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        app:sliderAnimationDuration="600"
-        app:sliderAutoCycleDirection="back_and_forth"
-        app:sliderAutoCycleEnabled="true"
-        app:sliderIndicatorAnimationDuration="600"
-        app:sliderIndicatorGravity="center_horizontal|bottom"
-        app:sliderIndicatorMarginBottom="50dp"
-        app:sliderIndicatorOrientation="horizontal"
-        app:sliderIndicatorPadding="3dp"
-        app:sliderIndicatorRadius="2dp"
-        app:sliderIndicatorSelectedColor="#19547B"
-        app:sliderIndicatorUnselectedColor="#FFF"
-        app:sliderScrollTimeInSec="2"
-        app:sliderStartAutoCycle="true" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:src="@mipmap/ic_logo" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-condensed"
-                android:text="Informasi Data Elektronik"
-                android:textColor="@color/black"
-                android:textSize="25dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-condensed"
-                android:text="Dinas Pendidikan Provinsi DKI Jakarta"
-                android:textColor="@color/black"
-                android:textSize="18dp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
     <androidx.core.widget.NestedScrollView
         android:id="@+id/area"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="265dp"
-        android:fillViewport="true"
-        android:background="@drawable/white_corner">
+        android:fillViewport="true">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <LinearLayout
-                android:id="@+id/main_menu"
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/image_slider"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:elevation="7dp"
+                android:layout_height="@dimen/_200sdp"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderAutoCycleEnabled="true"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMarginBottom="@dimen/_20sdp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="#19547B"
+                app:sliderIndicatorUnselectedColor="#FFF"
+                app:sliderScrollTimeInSec="2"
+                app:sliderStartAutoCycle="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
                 android:orientation="horizontal">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/btn_dataSekolah"
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:layout_weight="0.3"
-                    android:background="@drawable/gradient_1"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="7dp">
+                <ImageView
+                    android:layout_width="@dimen/_42sdp"
+                    android:layout_height="@dimen/_42sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:src="@drawable/sidebar_logo_nama" />
 
-                    <LinearLayout
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/gradient_1"
-                        android:orientation="vertical">
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Sistem Informasi Data Pendidikan"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_18ssp"
+                        android:textStyle="bold" />
 
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="10dp"
-                            android:src="@drawable/school" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="sans-serif-condensed"
-                            android:text="Data Sekolah" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/btn_dataRekap"
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:layout_weight="0.3"
-                    android:background="@drawable/gradient_2"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="7dp">
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/gradient_2"
-                        android:orientation="vertical">
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Dinas Pendidikan Provinsi DKI Jakarta"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
 
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="10dp"
-                            android:src="@drawable/list" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="sans-serif-condensed"
-                            android:text="Data Rekap" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/btn_dataSKPD"
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:layout_weight="0.3"
-                    android:background="@drawable/gradient_3"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="7dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/gradient_3"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="10dp"
-                            android:src="@drawable/organization" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="sans-serif-condensed"
-                            android:text="Data SKPD" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
+                </LinearLayout>
 
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/tvStatistik"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/main_menu"
-                android:layout_marginTop="10dp"
-                android:fontFamily="sans-serif-condensed"
-                android:text="Statistik Data Sekolah"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
 
-            <com.github.mikephil.charting.charts.BarChart
-                android:id="@+id/barChart"
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_below="@id/tvStatistik"/>
+                android:layout_marginTop="@dimen/_200sdp">
 
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="60dp"-->
-<!--                android:background="@drawable/blue_corner"-->
-<!--                android:orientation="vertical"-->
-<!--                android:layout_below="@id/barChart"-->
-<!--                android:layout_alignParentBottom="true">-->
+                <LinearLayout
+                    android:id="@+id/main_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/_7sdp"
+                    android:orientation="horizontal">
 
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:fontFamily="sans-serif-condensed"-->
-<!--                    android:text="Dinas Pendidikan Provinsi DKI Jakarta"-->
-<!--                    android:textAlignment="center"-->
-<!--                    android:textColor="@color/white"-->
-<!--                    android:textSize="15sp" />-->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btn_dataSekolah"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/gradient_1"
+                        android:clickable="true"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="7dp">
 
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:fontFamily="sans-serif-condensed"-->
-<!--                    android:text="made with luv © 2022"-->
-<!--                    android:textAlignment="center"-->
-<!--                    android:textColor="@color/white"-->
-<!--                    android:textSize="15sp" />-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:orientation="vertical">
 
-<!--            </LinearLayout>-->
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/school" />
 
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Data Sekolah" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btn_dataRekap"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/gradient_2"
+                        android:clickable="true"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="7dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/list" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Data Rekap" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btn_dataSKPD"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/gradient_3"
+                        android:clickable="true"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="7dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/organization" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Data SKPD" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvStatistik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/main_menu"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Statistik Data Sekolah"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <WebView
+                    android:id="@+id/barChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_300sdp"
+                    android:layout_below="@id/tvStatistik"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_below="@id/barChart"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/blue_corner_top"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Dinas Pendidikan Provinsi DKI Jakarta"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="made with luv © 2022"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
 
         </RelativeLayout>
+
 
     </androidx.core.widget.NestedScrollView>
 

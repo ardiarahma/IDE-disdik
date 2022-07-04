@@ -1,10 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".DataSekolahActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_corner_bottom">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Data Sekolah"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/btn_searchBySchoolName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/blue_corner"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="31dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_search" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:gravity="center"
+                    android:text="Cari sekolah berdasarkan nama"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/grad1_frame"
+                    android:id="@+id/btn_jakpus">
+
+                    <TextView
+                        android:layout_width="@dimen/_300sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="14dp"
+                        android:layout_marginBottom="41dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Kota Adm. Jakarta Pusat"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_20sdp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/grad2_frame"
+                    android:id="@+id/btn_jakut">
+
+                    <TextView
+                        android:layout_width="@dimen/_300sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="14dp"
+                        android:layout_marginBottom="41dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Kota Adm. Jakarta Utara"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_20sdp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/grad3_frame"
+                    android:id="@+id/btn_jaktim">
+
+                    <TextView
+                        android:layout_width="@dimen/_300sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="14dp"
+                        android:layout_marginBottom="41dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Kota Adm. Jakarta Timur"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_20sdp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/grad1_frame"
+                    android:id="@+id/btn_jaksel">
+
+                    <TextView
+                        android:layout_width="@dimen/_300sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="14dp"
+                        android:layout_marginBottom="41dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Kota Adm. Jakarta Selatan"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_20sdp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/grad2_frame"
+                    android:id="@+id/btn_jakbar">
+
+                    <TextView
+                        android:layout_width="@dimen/_300sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="14dp"
+                        android:layout_marginBottom="41dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Kota Adm. Jakarta Barat"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_20sdp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/grad3_frame"
+                    android:id="@+id/btn_seribu">
+
+                    <TextView
+                        android:layout_width="@dimen/_300sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="14dp"
+                        android:layout_marginBottom="41dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Kab. Adm. Kepulauan Seribu"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_20sdp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -12,6 +12,105 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IDEdisdik">
         <activity
+            android:name=".JuSmkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JuSmaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JuSmpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JuSlbActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JuSdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JuPkbmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JuPaudActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JpSmkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JpSmaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JpSmpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JpSlbActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JpSdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JpPkbmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JpPaudActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataDinasPrasardikActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataDinasSmkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataDinasSmpsmaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataDinasSdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataDinasPaudActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataDinasPpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataDinasPtkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataDinasSekdisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataUptActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataSudinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataDinasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FindByDistrictActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FindByNameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SekolahP1000Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SekolahJakbarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SekolahJaktimActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SekolahJakselActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SekolahJakutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SekolahJakpusActivity"
+            android:exported="false" />
+        <activity
             android:name=".DataSkpdActivity"
             android:exported="false" />
         <activity
