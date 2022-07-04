@@ -15,7 +15,7 @@ public class SekolahJakpusActivity extends AppCompatActivity {
 
     ImageView back;
     WebView statSekolah;
-    CardView btnPaud, btnPkbm, btnSd, btnSmp, btnSma, btnSmk;
+    CardView btnPaud, btnPkbm, btnSd, btnSlb, btnSmp, btnSma, btnSmk;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +60,42 @@ public class SekolahJakpusActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SekolahJakpusActivity.this, JpSdActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSlb = findViewById(R.id.btn_slb);
+        btnSlb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SekolahJakpusActivity.this, JpSlbActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSmp = findViewById(R.id.btn_smp);
+        btnSmp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SekolahJakpusActivity.this, JpSmpActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSma = findViewById(R.id.btn_sma);
+        btnSma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SekolahJakpusActivity.this, JpSmaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSmk = findViewById(R.id.btn_smk);
+        btnSmk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SekolahJakpusActivity.this, JpSmkActivity.class);
                 startActivity(intent);
             }
         });

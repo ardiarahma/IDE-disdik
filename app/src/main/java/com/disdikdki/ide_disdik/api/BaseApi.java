@@ -50,4 +50,28 @@ public interface BaseApi {
             @Body() SekolahBody sekolahBody
     );
 
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSlbJp(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSmpJp(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSmaJp(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSmkJp(
+            @Body() SekolahBody sekolahBody
+    );
+
 }
