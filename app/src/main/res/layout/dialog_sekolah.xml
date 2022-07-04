@@ -5,27 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:elevation="@dimen/_7sdp"
-    app:cardCornerRadius="@dimen/_20sdp">
+    app:cardCornerRadius="@dimen/_20sdp"
+    android:layout_margin="@dimen/_20sdp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/img_sekolah"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_200sdp" />
-
-        <TextView
-            android:id="@+id/tv_namaSekolah"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:fontFamily="sans-serif-black"
-            android:text="SDN Kayu Manis 01"
-            android:textSize="@dimen/_15ssp" />
+<!--        <ImageView-->
+<!--            android:id="@+id/img_sekolah"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_200sdp" />-->
 
         <!--        <TextView-->
         <!--            android:layout_width="match_parent"-->
@@ -35,6 +30,35 @@
         <!--            android:textSize="@dimen/_12ssp"-->
         <!--            android:textColor="@color/textHint"-->
         <!--            />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/close_dialog"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_weight="0.05"
+                android:src="@drawable/ic_baseline_close_24"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_Sekolah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="sans-serif-black"
+            android:text="SDN Kayu Manis 01"
+            android:textSize="@dimen/_15ssp" />
 
         <View
             android:layout_width="match_parent"
@@ -53,13 +77,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_2sdp"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="Akreditasi"
-                    android:textSize="@dimen/_10ssp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -99,14 +116,6 @@
                     android:layout_marginBottom="@dimen/_2sdp"
                     android:fontFamily="sans-serif-condensed"
                     android:text="Kota"
-                    android:textSize="@dimen/_10ssp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_2sdp"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="Provinsi"
                     android:textSize="@dimen/_10ssp" />
 
                 <TextView
@@ -188,36 +197,12 @@
                     android:text=":"
                     android:textSize="@dimen/_10ssp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_2sdp"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text=":"
-                    android:textSize="@dimen/_10ssp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_2sdp"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text=":"
-                    android:textSize="@dimen/_10ssp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tv_akreditasi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_2sdp"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="A"
-                    android:textSize="@dimen/_10ssp" />
 
                 <TextView
                     android:id="@+id/tv_getNpsn"
@@ -264,14 +249,6 @@
                     android:text="Kota Administrasi Jakarta Pusat"
                     android:textSize="@dimen/_10ssp" />
 
-                <TextView
-                    android:id="@+id/tv_provinsi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_2sdp"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="DKI Jakarta"
-                    android:textSize="@dimen/_10ssp" />
 
                 <TextView
                     android:id="@+id/tv_sudin"

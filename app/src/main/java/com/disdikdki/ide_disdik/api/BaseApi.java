@@ -74,4 +74,47 @@ public interface BaseApi {
             @Body() SekolahBody sekolahBody
     );
 
+    //Jakut
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getPaudJu(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getPkbmJu(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSdJu(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSlbJu(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSmpJu(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSmaJu(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSmkJu(
+            @Body() SekolahBody sekolahBody
+    );
+
 }
