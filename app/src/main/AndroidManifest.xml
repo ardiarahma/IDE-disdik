@@ -12,6 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IDEdisdik">
         <activity
+            android:name=".JuSmkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JuSmaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JuSmpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JuSlbActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JuSdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JuPkbmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JuPaudActivity"
+            android:exported="false" />
+        <activity
             android:name=".JpSmkActivity"
             android:exported="false" />
         <activity
