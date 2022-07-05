@@ -13,13 +13,9 @@ import retrofit2.http.POST;
 
 public interface BaseApi {
 
-//    @Headers("Content-Type: application/json")
-//    @FormUrlEncoded
-//    @POST("chart/data")
-//    Call<ListSekolahResponse> getAllSchool(
-//            @Field("csrf_token") String token,
-//            @Field("form_data") String form_data
-//    );
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSchool();
 
     @Headers("Content-Type: application/json")
     @POST("pejabat")
