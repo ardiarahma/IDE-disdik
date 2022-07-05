@@ -11,11 +11,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.disdikdki.ide_disdik.adapter.PaudJpAdapter;
 import com.disdikdki.ide_disdik.adapter.SekolahAdapter;
 import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.SekolahResponse;
-import com.disdikdki.ide_disdik.model.DataSekolah;
 import com.disdikdki.ide_disdik.model.Sekolah;
 
 import java.util.ArrayList;
@@ -23,7 +21,6 @@ import java.util.ArrayList;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
 
 public class FindByNameActivity extends AppCompatActivity {
 

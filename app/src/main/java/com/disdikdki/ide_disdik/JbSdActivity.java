@@ -23,7 +23,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class JuSdActivity extends AppCompatActivity {
+public class JbSdActivity extends AppCompatActivity {
 
     ImageView back;
     RecyclerView rvSd;
@@ -48,12 +48,12 @@ public class JuSdActivity extends AppCompatActivity {
 
         rvSd = findViewById(R.id.rv_sekolahSd);
 
-        SekolahBody body = new SekolahBody("SD", "Jakarta Utara", 1000, 0);
+        SekolahBody body = new SekolahBody("SD", "Jakarta Barat", 1000, 0);
 
         Call<SekolahResponse> call = RetrofitClient
                 .getInstance()
                 .getAPI()
-                .getSdJu(body);
+                .getSdJb(body);
 
         call.enqueue(new Callback<SekolahResponse>() {
             @Override
@@ -68,7 +68,7 @@ public class JuSdActivity extends AppCompatActivity {
                     rvSd.setLayoutManager(layoutManager);
                     rvSd.setItemAnimator(new DefaultItemAnimator());
                     rvSd.setHasFixedSize(true);
-                    sdAdapter = new SdAdapter(sekolahs, JuSdActivity.this);
+                    sdAdapter = new SdAdapter(sekolahs, JbSdActivity.this);
                     rvSd.setAdapter(sdAdapter);
                     sdAdapter.notifyDataSetChanged();
 

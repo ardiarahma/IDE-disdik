@@ -1,6 +1,5 @@
 package com.disdikdki.ide_disdik;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -11,7 +10,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.disdikdki.ide_disdik.adapter.SdAdapter;
+import com.disdikdki.ide_disdik.adapter.SmpAdapter;
 import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.Sekolah;
 import com.disdikdki.ide_disdik.model.SekolahBody;
@@ -23,20 +22,19 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class JuSdActivity extends AppCompatActivity {
+public class JbSmpActivity extends AppCompatActivity {
 
     ImageView back;
-    RecyclerView rvSd;
+    RecyclerView rvSmp;
 
     ArrayList<SekolahResponse> sekolahResponses;
     ArrayList<Sekolah> sekolahs;
-    SdAdapter sdAdapter;
-    Context context;
+    SmpAdapter smpAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ju_sd);
+        setContentView(R.layout.activity_ju_smp);
 
         back = findViewById(R.id.btn_back);
         back.setOnClickListener(new View.OnClickListener() {
@@ -46,14 +44,14 @@ public class JuSdActivity extends AppCompatActivity {
             }
         });
 
-        rvSd = findViewById(R.id.rv_sekolahSd);
+        rvSmp = findViewById(R.id.rv_sekolahSmp);
 
-        SekolahBody body = new SekolahBody("SD", "Jakarta Utara", 1000, 0);
+        SekolahBody body = new SekolahBody("SMP", "Jakarta Barat", 1000, 0);
 
         Call<SekolahResponse> call = RetrofitClient
                 .getInstance()
                 .getAPI()
-                .getSdJu(body);
+                .getSmpJb(body);
 
         call.enqueue(new Callback<SekolahResponse>() {
             @Override
@@ -65,12 +63,12 @@ public class JuSdActivity extends AppCompatActivity {
                     sekolahs = sekolahResponse.getSekolahs();
                     LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
                     layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-                    rvSd.setLayoutManager(layoutManager);
-                    rvSd.setItemAnimator(new DefaultItemAnimator());
-                    rvSd.setHasFixedSize(true);
-                    sdAdapter = new SdAdapter(sekolahs, JuSdActivity.this);
-                    rvSd.setAdapter(sdAdapter);
-                    sdAdapter.notifyDataSetChanged();
+                    rvSmp.setLayoutManager(layoutManager);
+                    rvSmp.setItemAnimator(new DefaultItemAnimator());
+                    rvSmp.setHasFixedSize(true);
+                    smpAdapter = new SmpAdapter(sekolahs, JbSmpActivity.this);
+                    rvSmp.setAdapter(smpAdapter);
+                    smpAdapter.notifyDataSetChanged();
 
                 }
             }

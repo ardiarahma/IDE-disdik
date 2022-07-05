@@ -12,10 +12,49 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IDEdisdik">
         <activity
-            android:name=".JuSmkActivity"
+            android:name=".JsSmkActivity"
             android:exported="false" />
         <activity
-            android:name=".JuSmaActivity"
+            android:name=".JsSmaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JsSmpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JsSlbActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JsSdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JsPkbmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JsPaudActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JbSmkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JbSmaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JbSmpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JbSlbActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JbSdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JbPkbmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JbPaudActivity"
+            android:exported="false" />
+        <activity
+        android:name=".JuSmaActivity"
             android:exported="false" />
         <activity
             android:name=".JuSmpActivity"

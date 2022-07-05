@@ -10,8 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.disdikdki.ide_disdik.adapter.SdJpAdapter;
-import com.disdikdki.ide_disdik.adapter.SlbJpAdapter;
+import com.disdikdki.ide_disdik.adapter.SlbAdapter;
 import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.Sekolah;
 import com.disdikdki.ide_disdik.model.SekolahBody;
@@ -30,7 +29,7 @@ public class JpSlbActivity extends AppCompatActivity {
 
     ArrayList<SekolahResponse> sekolahResponses;
     ArrayList<Sekolah> sekolahs;
-    SlbJpAdapter slbJpAdapter;
+    SlbAdapter slbAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,9 +66,9 @@ public class JpSlbActivity extends AppCompatActivity {
                     rvSlbJp.setLayoutManager(layoutManager);
                     rvSlbJp.setItemAnimator(new DefaultItemAnimator());
                     rvSlbJp.setHasFixedSize(true);
-                    slbJpAdapter = new SlbJpAdapter(sekolahs, JpSlbActivity.this);
-                    rvSlbJp.setAdapter(slbJpAdapter);
-                    slbJpAdapter.notifyDataSetChanged();
+                    slbAdapter = new SlbAdapter(sekolahs, JpSlbActivity.this);
+                    rvSlbJp.setAdapter(slbAdapter);
+                    slbAdapter.notifyDataSetChanged();
 
                 }
             }

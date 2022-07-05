@@ -23,7 +23,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class JuSdActivity extends AppCompatActivity {
+public class JsSdActivity extends AppCompatActivity {
 
     ImageView back;
     RecyclerView rvSd;
@@ -36,7 +36,7 @@ public class JuSdActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ju_sd);
+        setContentView(R.layout.activity_js_sd);
 
         back = findViewById(R.id.btn_back);
         back.setOnClickListener(new View.OnClickListener() {
@@ -48,12 +48,12 @@ public class JuSdActivity extends AppCompatActivity {
 
         rvSd = findViewById(R.id.rv_sekolahSd);
 
-        SekolahBody body = new SekolahBody("SD", "Jakarta Utara", 1000, 0);
+        SekolahBody body = new SekolahBody("SD", "Jakarta Selatan", 1000, 0);
 
         Call<SekolahResponse> call = RetrofitClient
                 .getInstance()
                 .getAPI()
-                .getSdJu(body);
+                .getSdJs(body);
 
         call.enqueue(new Callback<SekolahResponse>() {
             @Override
@@ -68,7 +68,7 @@ public class JuSdActivity extends AppCompatActivity {
                     rvSd.setLayoutManager(layoutManager);
                     rvSd.setItemAnimator(new DefaultItemAnimator());
                     rvSd.setHasFixedSize(true);
-                    sdAdapter = new SdAdapter(sekolahs, JuSdActivity.this);
+                    sdAdapter = new SdAdapter(sekolahs, JsSdActivity.this);
                     rvSd.setAdapter(sdAdapter);
                     sdAdapter.notifyDataSetChanged();
 

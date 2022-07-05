@@ -22,25 +22,25 @@ import com.disdikdki.ide_disdik.model.Sekolah;
 
 import java.util.ArrayList;
 
-public class SlbJuAdapter extends RecyclerView.Adapter<SlbJuAdapter.ViewHolder>{
+public class SmkAdapter extends RecyclerView.Adapter<SmkAdapter.ViewHolder>{
 
     private ArrayList<Sekolah> sekolahs;
     private Context context;
 
-    public SlbJuAdapter(ArrayList<Sekolah> sekolahs, Context context) {
+    public SmkAdapter(ArrayList<Sekolah> sekolahs, Context context) {
         this.sekolahs = sekolahs;
         this.context = context;
     }
 
     @NonNull
     @Override
-    public SlbJuAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public SmkAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_sekolah, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull SlbJuAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull SmkAdapter.ViewHolder holder, int position) {
         Sekolah sekolah = sekolahs.get(position);
         holder.tvNamaSekolah.setText(sekolah.getNama_sekolah());
         holder.tvNpsn.setText(sekolah.getNpsn());

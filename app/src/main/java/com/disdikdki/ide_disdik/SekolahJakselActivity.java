@@ -1,6 +1,7 @@
 package com.disdikdki.ide_disdik;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,6 +15,8 @@ public class SekolahJakselActivity extends AppCompatActivity {
     ImageView back;
     WebView statSekolah;
 
+    CardView btnPaud, btnPkbm, btnSd, btnSlb, btnSmp, btnSma, btnSmk;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,8 +26,7 @@ public class SekolahJakselActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SekolahJakselActivity.this, DataSekolahActivity.class);
-                startActivity(intent);
+                onBackPressed();
             }
         });
 
@@ -34,5 +36,68 @@ public class SekolahJakselActivity extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         webSettings.setBuiltInZoomControls(true);
         webSettings.setLoadWithOverviewMode(true);
+
+        btnPaud = findViewById(R.id.btn_paud);
+        btnPaud.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SekolahJakselActivity.this, JsPaudActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnPkbm = findViewById(R.id.btn_pkbm);
+        btnPkbm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SekolahJakselActivity.this, JsPkbmActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSd = findViewById(R.id.btn_sd);
+        btnSd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SekolahJakselActivity.this, JsSdActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSlb = findViewById(R.id.btn_slb);
+        btnSlb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SekolahJakselActivity.this, JsSlbActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSmp = findViewById(R.id.btn_smp);
+        btnSmp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SekolahJakselActivity.this, JsSmpActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSma = findViewById(R.id.btn_sma);
+        btnSma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SekolahJakselActivity.this, JsSmaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSmk = findViewById(R.id.btn_smk);
+        btnSmk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SekolahJakselActivity.this, JsSmkActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

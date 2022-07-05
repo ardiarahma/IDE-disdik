@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.disdikdki.ide_disdik.adapter.SdAdapter;
+import com.disdikdki.ide_disdik.adapter.PaudAdapter;
 import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.Sekolah;
 import com.disdikdki.ide_disdik.model.SekolahBody;
@@ -23,20 +23,20 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class JuSdActivity extends AppCompatActivity {
+public class JsPaudActivity extends AppCompatActivity {
 
     ImageView back;
-    RecyclerView rvSd;
+    RecyclerView rvPaud;
 
     ArrayList<SekolahResponse> sekolahResponses;
     ArrayList<Sekolah> sekolahs;
-    SdAdapter sdAdapter;
+    PaudAdapter paudAdapter;
     Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ju_sd);
+        setContentView(R.layout.activity_js_paud);
 
         back = findViewById(R.id.btn_back);
         back.setOnClickListener(new View.OnClickListener() {
@@ -46,14 +46,14 @@ public class JuSdActivity extends AppCompatActivity {
             }
         });
 
-        rvSd = findViewById(R.id.rv_sekolahSd);
+        rvPaud = findViewById(R.id.rv_sekolahPaud);
 
-        SekolahBody body = new SekolahBody("SD", "Jakarta Utara", 1000, 0);
+        SekolahBody body = new SekolahBody("PAUD", "Jakarta Selatan", 1000, 0);
 
         Call<SekolahResponse> call = RetrofitClient
                 .getInstance()
                 .getAPI()
-                .getSdJu(body);
+                .getPaudJs(body);
 
         call.enqueue(new Callback<SekolahResponse>() {
             @Override
@@ -65,12 +65,12 @@ public class JuSdActivity extends AppCompatActivity {
                     sekolahs = sekolahResponse.getSekolahs();
                     LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
                     layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-                    rvSd.setLayoutManager(layoutManager);
-                    rvSd.setItemAnimator(new DefaultItemAnimator());
-                    rvSd.setHasFixedSize(true);
-                    sdAdapter = new SdAdapter(sekolahs, JuSdActivity.this);
-                    rvSd.setAdapter(sdAdapter);
-                    sdAdapter.notifyDataSetChanged();
+                    rvPaud.setLayoutManager(layoutManager);
+                    rvPaud.setItemAnimator(new DefaultItemAnimator());
+                    rvPaud.setHasFixedSize(true);
+                    paudAdapter = new PaudAdapter(sekolahs, JsPaudActivity.this);
+                    rvPaud.setAdapter(paudAdapter);
+                    paudAdapter.notifyDataSetChanged();
 
                 }
             }

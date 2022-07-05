@@ -10,9 +10,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
-import com.disdikdki.ide_disdik.adapter.SdJpAdapter;
+import com.disdikdki.ide_disdik.adapter.SdAdapter;
 import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.SekolahResponse;
 import com.disdikdki.ide_disdik.model.Sekolah;
@@ -31,7 +30,7 @@ public class JpSdActivity extends AppCompatActivity {
 
     ArrayList<SekolahResponse> sekolahResponses;
     ArrayList<Sekolah> sekolahs;
-    SdJpAdapter sdJpAdapter;
+    SdAdapter sdAdapter;
     Context context;
 
     @Override
@@ -69,9 +68,9 @@ public class JpSdActivity extends AppCompatActivity {
                     rvSdJp.setLayoutManager(layoutManager);
                     rvSdJp.setItemAnimator(new DefaultItemAnimator());
                     rvSdJp.setHasFixedSize(true);
-                    sdJpAdapter = new SdJpAdapter(sekolahs, JpSdActivity.this);
-                    rvSdJp.setAdapter(sdJpAdapter);
-                    sdJpAdapter.notifyDataSetChanged();
+                    sdAdapter = new SdAdapter(sekolahs, JpSdActivity.this);
+                    rvSdJp.setAdapter(sdAdapter);
+                    sdAdapter.notifyDataSetChanged();
 
                 }
             }

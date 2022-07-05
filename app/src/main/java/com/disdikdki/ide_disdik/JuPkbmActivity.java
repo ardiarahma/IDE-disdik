@@ -11,8 +11,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.disdikdki.ide_disdik.adapter.PkbmJpAdapter;
-import com.disdikdki.ide_disdik.adapter.PkbmJuAdapter;
+import com.disdikdki.ide_disdik.adapter.PkbmAdapter;
 import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.Sekolah;
 import com.disdikdki.ide_disdik.model.SekolahBody;
@@ -31,7 +30,7 @@ public class JuPkbmActivity extends AppCompatActivity {
 
     ArrayList<SekolahResponse> sekolahResponses;
     ArrayList<Sekolah> sekolahs;
-    PkbmJuAdapter pkbmAdapter;
+    PkbmAdapter pkbmAdapter;
     Context context;
 
     @Override
@@ -69,7 +68,7 @@ public class JuPkbmActivity extends AppCompatActivity {
                     rvPkbm.setLayoutManager(layoutManager);
                     rvPkbm.setItemAnimator(new DefaultItemAnimator());
                     rvPkbm.setHasFixedSize(true);
-                    pkbmAdapter = new PkbmJuAdapter(sekolahs, JuPkbmActivity.this);
+                    pkbmAdapter = new PkbmAdapter(sekolahs, JuPkbmActivity.this);
                     rvPkbm.setAdapter(pkbmAdapter);
                     pkbmAdapter.notifyDataSetChanged();
 

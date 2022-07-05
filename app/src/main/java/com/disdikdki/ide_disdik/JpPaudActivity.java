@@ -10,9 +10,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
-import com.disdikdki.ide_disdik.adapter.PaudJpAdapter;
+import com.disdikdki.ide_disdik.adapter.PaudAdapter;
 import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.SekolahResponse;
 import com.disdikdki.ide_disdik.model.Sekolah;
@@ -31,7 +30,7 @@ public class JpPaudActivity extends AppCompatActivity {
 
     ArrayList<SekolahResponse> sekolahResponses;
     ArrayList<Sekolah> sekolahs;
-    PaudJpAdapter paudJpAdapter;
+    PaudAdapter paudAdapter;
     Context context;
 
     @Override
@@ -69,9 +68,9 @@ public class JpPaudActivity extends AppCompatActivity {
                     rvPaudJp.setLayoutManager(layoutManager);
                     rvPaudJp.setItemAnimator(new DefaultItemAnimator());
                     rvPaudJp.setHasFixedSize(true);
-                    paudJpAdapter = new PaudJpAdapter(sekolahs, JpPaudActivity.this);
-                    rvPaudJp.setAdapter(paudJpAdapter);
-                    paudJpAdapter.notifyDataSetChanged();
+                    paudAdapter = new PaudAdapter(sekolahs, JpPaudActivity.this);
+                    rvPaudJp.setAdapter(paudAdapter);
+                    paudAdapter.notifyDataSetChanged();
 
                 }
             }

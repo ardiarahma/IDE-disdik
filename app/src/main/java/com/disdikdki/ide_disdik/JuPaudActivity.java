@@ -11,8 +11,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.disdikdki.ide_disdik.adapter.PaudJpAdapter;
-import com.disdikdki.ide_disdik.adapter.PaudJuAdapter;
+import com.disdikdki.ide_disdik.adapter.PaudAdapter;
 import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.Sekolah;
 import com.disdikdki.ide_disdik.model.SekolahBody;
@@ -27,11 +26,11 @@ import retrofit2.Response;
 public class JuPaudActivity extends AppCompatActivity {
 
     ImageView back;
-    RecyclerView rvPaudJu;
+    RecyclerView rvPaud;
 
     ArrayList<SekolahResponse> sekolahResponses;
     ArrayList<Sekolah> sekolahs;
-    PaudJuAdapter paudJuAdapter;
+    PaudAdapter paudAdapter;
     Context context;
 
     @Override
@@ -47,7 +46,7 @@ public class JuPaudActivity extends AppCompatActivity {
             }
         });
 
-        rvPaudJu = findViewById(R.id.rv_sekolahPaud);
+        rvPaud = findViewById(R.id.rv_sekolahPaud);
 
         SekolahBody body = new SekolahBody("PAUD", "Jakarta Utara", 1000, 0);
 
@@ -66,12 +65,12 @@ public class JuPaudActivity extends AppCompatActivity {
                     sekolahs = sekolahResponse.getSekolahs();
                     LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
                     layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-                    rvPaudJu.setLayoutManager(layoutManager);
-                    rvPaudJu.setItemAnimator(new DefaultItemAnimator());
-                    rvPaudJu.setHasFixedSize(true);
-                    paudJuAdapter = new PaudJuAdapter(sekolahs, JuPaudActivity.this);
-                    rvPaudJu.setAdapter(paudJuAdapter);
-                    paudJuAdapter.notifyDataSetChanged();
+                    rvPaud.setLayoutManager(layoutManager);
+                    rvPaud.setItemAnimator(new DefaultItemAnimator());
+                    rvPaud.setHasFixedSize(true);
+                    paudAdapter = new PaudAdapter(sekolahs, JuPaudActivity.this);
+                    rvPaud.setAdapter(paudAdapter);
+                    paudAdapter.notifyDataSetChanged();
 
                 }
             }
