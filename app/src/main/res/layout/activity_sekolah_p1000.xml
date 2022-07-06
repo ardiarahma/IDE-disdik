@@ -102,7 +102,6 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:id="@+id/btn_pkbm"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_40sdp"
@@ -110,7 +109,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
-
+                    android:id="@+id/btn_pkbm"
                     android:layout_width="@dimen/_50sdp"
                     android:layout_height="@dimen/_50sdp"
                     android:layout_gravity="center"
@@ -139,13 +138,13 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/btn_paud"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.1"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_paud"
                     android:layout_width="@dimen/_50sdp"
                     android:layout_height="@dimen/_50sdp"
                     android:layout_gravity="center"
@@ -174,7 +173,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/btn_slb"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="@dimen/_40sdp"
@@ -182,7 +180,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
-
+                    android:id="@+id/btn_slb"
                     android:layout_width="@dimen/_50sdp"
                     android:layout_height="@dimen/_50sdp"
                     android:layout_gravity="center"
@@ -221,7 +219,6 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:id="@+id/btn_sd"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_20sdp"
@@ -229,6 +226,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_sd"
                     android:layout_width="@dimen/_50sdp"
                     android:layout_height="@dimen/_50sdp"
                     android:layout_gravity="center"
@@ -257,7 +255,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/btn_smp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_20sdp"
@@ -265,7 +262,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
-
+                    android:id="@+id/btn_smp"
                     android:layout_width="@dimen/_50sdp"
                     android:layout_height="@dimen/_50sdp"
                     android:layout_gravity="center"
@@ -294,7 +291,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/btn_sma"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_20sdp"
@@ -302,7 +298,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
-
+                    android:id="@+id/btn_sma"
                     android:layout_width="@dimen/_50sdp"
                     android:layout_height="@dimen/_50sdp"
                     android:layout_gravity="center"
@@ -331,7 +327,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/btn_smk"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_20sdp"
@@ -340,6 +335,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_smk"
                     android:layout_width="@dimen/_50sdp"
                     android:layout_height="@dimen/_50sdp"
                     android:layout_gravity="center"
@@ -370,5 +366,6 @@
         </LinearLayout>
 
     </LinearLayout>
+
 
 </androidx.core.widget.NestedScrollView>

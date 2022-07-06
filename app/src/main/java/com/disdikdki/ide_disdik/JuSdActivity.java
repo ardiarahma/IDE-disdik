@@ -11,8 +11,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.disdikdki.ide_disdik.adapter.SdJpAdapter;
-import com.disdikdki.ide_disdik.adapter.SdJuAdapter;
+import com.disdikdki.ide_disdik.adapter.SdAdapter;
 import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.Sekolah;
 import com.disdikdki.ide_disdik.model.SekolahBody;
@@ -31,7 +30,7 @@ public class JuSdActivity extends AppCompatActivity {
 
     ArrayList<SekolahResponse> sekolahResponses;
     ArrayList<Sekolah> sekolahs;
-    SdJuAdapter sdAdapter;
+    SdAdapter sdAdapter;
     Context context;
 
     @Override
@@ -69,7 +68,7 @@ public class JuSdActivity extends AppCompatActivity {
                     rvSd.setLayoutManager(layoutManager);
                     rvSd.setItemAnimator(new DefaultItemAnimator());
                     rvSd.setHasFixedSize(true);
-                    sdAdapter = new SdJuAdapter(sekolahs, JuSdActivity.this);
+                    sdAdapter = new SdAdapter(sekolahs, JuSdActivity.this);
                     rvSd.setAdapter(sdAdapter);
                     sdAdapter.notifyDataSetChanged();
 

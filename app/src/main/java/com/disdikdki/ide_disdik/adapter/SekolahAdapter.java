@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -21,26 +23,36 @@ import com.disdikdki.ide_disdik.R;
 import com.disdikdki.ide_disdik.model.Sekolah;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
-public class SmaJuAdapter extends RecyclerView.Adapter<SmaJuAdapter.ViewHolder>{
+public class SekolahAdapter extends RecyclerView.Adapter<SekolahAdapter.ViewHolder>{
 
     private ArrayList<Sekolah> sekolahs;
+    private ArrayList<Sekolah> filteredSekolah;
     private Context context;
+//    private SekolahFilter sekolahFilter;
+    private static final int LOADING = 0;
+    private static final int ITEM = 0;
+    private boolean isLoadingAdded = false;
 
-    public SmaJuAdapter(ArrayList<Sekolah> sekolahs, Context context) {
+    public SekolahAdapter(ArrayList<Sekolah> sekolahs, Context context) {
         this.sekolahs = sekolahs;
         this.context = context;
     }
 
+    public void setSekolahs(ArrayList<Sekolah> sekolahs) {
+        this.sekolahs = sekolahs;
+    }
+
     @NonNull
     @Override
-    public SmaJuAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public SekolahAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_sekolah, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull SmaJuAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull SekolahAdapter.ViewHolder holder, int position) {
         Sekolah sekolah = sekolahs.get(position);
         holder.tvNamaSekolah.setText(sekolah.getNama_sekolah());
         holder.tvNpsn.setText(sekolah.getNpsn());
@@ -66,6 +78,52 @@ public class SmaJuAdapter extends RecyclerView.Adapter<SmaJuAdapter.ViewHolder>{
     public int getItemCount() {
         return sekolahs.size();
     }
+
+//    @Override
+//    public Filter getFilter() {
+//        if (sekolahFilter == null){
+//            sekolahFilter = new SekolahFilter(this, sekolahs);
+//        }
+//        return sekolahFilter;
+//    }
+
+//    private static class SekolahFilter extends Filter{
+//        private final SekolahAdapter adapter;
+//        private final ArrayList<Sekolah> originalList;
+//        private final ArrayList<Sekolah> filteredList;
+//
+//        public SekolahFilter(SekolahAdapter adapter, ArrayList<Sekolah> originalList) {
+//            this.adapter = adapter;
+//            this.originalList = new LinkedList<>(originalList);
+//            this.filteredList = new ArrayList<>();
+//        }
+//
+//        @Override
+//        protected FilterResults performFiltering(CharSequence constraint) {
+//            filteredList.clear();
+//            final FilterResults results = new FilterResults();
+//            if (constraint.length() == 0){
+//                filteredList.addAll(originalList);
+//            }else {
+//                final String filterPattern = constraint.toString().toLowerCase().trim();
+//                for (final Sekolah sekolah : originalList){
+//                    if (sekolah.getNama_sekolah().contains(filterPattern)){
+//                        filteredList.add(sekolah);
+//                    }
+//                }
+//            }
+//            results.values = filteredList;
+//            results.count = filteredList.size();
+//            return results;
+//        }
+//
+//        @Override
+//        protected void publishResults(CharSequence constraint, FilterResults results) {
+//            adapter.filteredSekolah.clear();
+//            adapter.filteredSekolah.addAll((ArrayList<Sekolah>) results.values);
+//            adapter.notifyDataSetChanged();
+//        }
+//    }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         private String namasekolah, npsn, alamat, kel, kec, kota, prov, sudin, telp, kepsek, hpkepsek;
@@ -146,5 +204,6 @@ public class SmaJuAdapter extends RecyclerView.Adapter<SmaJuAdapter.ViewHolder>{
 
             dialogSekolah.show();
         }
+
     }
 }

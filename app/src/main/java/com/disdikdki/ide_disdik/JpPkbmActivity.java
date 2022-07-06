@@ -10,10 +10,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
-import com.disdikdki.ide_disdik.adapter.PaudJpAdapter;
-import com.disdikdki.ide_disdik.adapter.PkbmJpAdapter;
+import com.disdikdki.ide_disdik.adapter.PkbmAdapter;
 import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.SekolahResponse;
 import com.disdikdki.ide_disdik.model.Sekolah;
@@ -32,7 +30,7 @@ public class JpPkbmActivity extends AppCompatActivity {
 
     ArrayList<SekolahResponse> sekolahResponses;
     ArrayList<Sekolah> sekolahs;
-    PkbmJpAdapter pkbmJpAdapter;
+    PkbmAdapter pkbmAdapter;
     Context context;
 
     @Override
@@ -70,9 +68,9 @@ public class JpPkbmActivity extends AppCompatActivity {
                     rvPkbmJp.setLayoutManager(layoutManager);
                     rvPkbmJp.setItemAnimator(new DefaultItemAnimator());
                     rvPkbmJp.setHasFixedSize(true);
-                    pkbmJpAdapter = new PkbmJpAdapter(sekolahs, JpPkbmActivity.this);
-                    rvPkbmJp.setAdapter(pkbmJpAdapter);
-                    pkbmJpAdapter.notifyDataSetChanged();
+                    pkbmAdapter = new PkbmAdapter(sekolahs, JpPkbmActivity.this);
+                    rvPkbmJp.setAdapter(pkbmAdapter);
+                    pkbmAdapter.notifyDataSetChanged();
 
                 }
             }

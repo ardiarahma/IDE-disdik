@@ -13,13 +13,9 @@ import retrofit2.http.POST;
 
 public interface BaseApi {
 
-//    @Headers("Content-Type: application/json")
-//    @FormUrlEncoded
-//    @POST("chart/data")
-//    Call<ListSekolahResponse> getAllSchool(
-//            @Field("csrf_token") String token,
-//            @Field("form_data") String form_data
-//    );
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSchool();
 
     @Headers("Content-Type: application/json")
     @POST("pejabat")
@@ -114,6 +110,178 @@ public interface BaseApi {
     @Headers("Content-Type: application/json")
     @POST("sekolah")
     Call<SekolahResponse> getSmkJu(
+            @Body() SekolahBody sekolahBody
+    );
+
+    //Jakbar
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getPaudJb(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getPkbmJb(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSdJb(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSlbJb(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSmpJb(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSmaJb(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSmkJb(
+            @Body() SekolahBody sekolahBody
+    );
+
+    //Jaksel
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getPaudJs(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getPkbmJs(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSdJs(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSlbJs(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSmpJs(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSmaJs(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSmkJs(
+            @Body() SekolahBody sekolahBody
+    );
+
+    //Jaktim
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getPaudJt(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getPkbmJt(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSdJt(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSlbJt(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSmpJt(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSmaJt(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSmkJt(
+            @Body() SekolahBody sekolahBody
+    );
+
+    //P1000
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getPaudSeribu(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getPkbmSeribu(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSdSeribu(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSlbSeribu(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSmpSeribu(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSmaSeribu(
+            @Body() SekolahBody sekolahBody
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
+    Call<SekolahResponse> getSmkSeribu(
             @Body() SekolahBody sekolahBody
     );
 

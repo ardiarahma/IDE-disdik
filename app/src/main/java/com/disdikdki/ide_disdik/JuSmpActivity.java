@@ -10,8 +10,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.disdikdki.ide_disdik.adapter.SmpJpAdapter;
-import com.disdikdki.ide_disdik.adapter.SmpJuAdapter;
+import com.disdikdki.ide_disdik.adapter.SmpAdapter;
 import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.Sekolah;
 import com.disdikdki.ide_disdik.model.SekolahBody;
@@ -30,7 +29,7 @@ public class JuSmpActivity extends AppCompatActivity {
 
     ArrayList<SekolahResponse> sekolahResponses;
     ArrayList<Sekolah> sekolahs;
-    SmpJuAdapter smpAdapter;
+    SmpAdapter smpAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +66,7 @@ public class JuSmpActivity extends AppCompatActivity {
                     rvSmp.setLayoutManager(layoutManager);
                     rvSmp.setItemAnimator(new DefaultItemAnimator());
                     rvSmp.setHasFixedSize(true);
-                    smpAdapter = new SmpJuAdapter(sekolahs, JuSmpActivity.this);
+                    smpAdapter = new SmpAdapter(sekolahs, JuSmpActivity.this);
                     rvSmp.setAdapter(smpAdapter);
                     smpAdapter.notifyDataSetChanged();
 

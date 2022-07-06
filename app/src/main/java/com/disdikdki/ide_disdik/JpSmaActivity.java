@@ -10,8 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.disdikdki.ide_disdik.adapter.SmaJpAdapter;
-import com.disdikdki.ide_disdik.adapter.SmpJpAdapter;
+import com.disdikdki.ide_disdik.adapter.SmaAdapter;
 import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.Sekolah;
 import com.disdikdki.ide_disdik.model.SekolahBody;
@@ -30,7 +29,7 @@ public class JpSmaActivity extends AppCompatActivity {
 
     ArrayList<SekolahResponse> sekolahResponses;
     ArrayList<Sekolah> sekolahs;
-    SmaJpAdapter smaJpAdapter;
+    SmaAdapter smaAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,9 +66,9 @@ public class JpSmaActivity extends AppCompatActivity {
                     rvSmaJp.setLayoutManager(layoutManager);
                     rvSmaJp.setItemAnimator(new DefaultItemAnimator());
                     rvSmaJp.setHasFixedSize(true);
-                    smaJpAdapter = new SmaJpAdapter(sekolahs, JpSmaActivity.this);
-                    rvSmaJp.setAdapter(smaJpAdapter);
-                    smaJpAdapter.notifyDataSetChanged();
+                    smaAdapter = new SmaAdapter(sekolahs, JpSmaActivity.this);
+                    rvSmaJp.setAdapter(smaAdapter);
+                    smaAdapter.notifyDataSetChanged();
 
                 }
             }

@@ -10,8 +10,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.disdikdki.ide_disdik.adapter.SmkJpAdapter;
-import com.disdikdki.ide_disdik.adapter.SmkJuAdapter;
+import com.disdikdki.ide_disdik.adapter.SmkAdapter;
 import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.Sekolah;
 import com.disdikdki.ide_disdik.model.SekolahBody;
@@ -30,7 +29,7 @@ public class JuSmkActivity extends AppCompatActivity {
 
     ArrayList<SekolahResponse> sekolahResponses;
     ArrayList<Sekolah> sekolahs;
-    SmkJuAdapter smkAdapter;
+    SmkAdapter smkAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +66,7 @@ public class JuSmkActivity extends AppCompatActivity {
                     rvSmk.setLayoutManager(layoutManager);
                     rvSmk.setItemAnimator(new DefaultItemAnimator());
                     rvSmk.setHasFixedSize(true);
-                    smkAdapter = new SmkJuAdapter(sekolahs, JuSmkActivity.this);
+                    smkAdapter = new SmkAdapter(sekolahs, JuSmkActivity.this);
                     rvSmk.setAdapter(smkAdapter);
                     smkAdapter.notifyDataSetChanged();
 

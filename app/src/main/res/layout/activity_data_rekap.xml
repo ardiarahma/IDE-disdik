@@ -186,11 +186,11 @@
 
         </LinearLayout>
 
-<!--        pie chart-->
+        <!--        pie chart-->
         <androidx.cardview.widget.CardView
             android:id="@+id/pc_sekolah"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_350sdp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_5sdp"
             android:layout_marginRight="@dimen/_5sdp"
             app:cardCornerRadius="10dp">
@@ -198,7 +198,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_10sdp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -213,16 +214,23 @@
                 <WebView
                     android:id="@+id/pchart_sekolah"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_250sdp" />
+                    android:layout_height="@dimen/_180sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_27sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:foregroundGravity="center" />
 
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/pc_pesdik"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_350sdp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_5sdp"
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginRight="@dimen/_5sdp"
@@ -231,7 +239,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_10sdp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -245,16 +254,23 @@
                 <WebView
                     android:id="@+id/pchart_pesdik"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_250sdp" />
+                    android:layout_height="@dimen/_180sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_27sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:foregroundGravity="center" />
 
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/pc_guru"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_350sdp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_5sdp"
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginRight="@dimen/_5sdp"
@@ -263,7 +279,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_10sdp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -277,25 +294,33 @@
                 <WebView
                     android:id="@+id/pchart_guru"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_250sdp" />
+                    android:layout_height="@dimen/_180sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_27sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:foregroundGravity="center" />
 
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/pc_tendik"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_350sdp"
-            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginRight="@dimen/_5sdp"
             app:cardCornerRadius="@dimen/_10sdp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_10sdp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -309,27 +334,34 @@
                 <WebView
                     android:id="@+id/pchart_tendik"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_250sdp" />
+                    android:layout_height="@dimen/_180sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_27sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:foregroundGravity="center" />
 
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
-<!--        bar chart-->
+        <!--        bar chart-->
         <androidx.cardview.widget.CardView
             android:id="@+id/bc_sekolah"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_350sdp"
-            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginRight="@dimen/_5sdp"
             app:cardCornerRadius="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_10sdp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -343,25 +375,33 @@
                 <WebView
                     android:id="@+id/bchart_sekolah"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_250sdp" />
+                    android:layout_height="@dimen/_180sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_27sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:foregroundGravity="center" />
 
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/bc_pesdik"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_350sdp"
-            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginRight="@dimen/_5sdp"
             app:cardCornerRadius="@dimen/_10sdp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_10sdp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -375,25 +415,33 @@
                 <WebView
                     android:id="@+id/bchart_pesdik"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_250sdp" />
+                    android:layout_height="@dimen/_180sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_27sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:foregroundGravity="center" />
 
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/bc_guru"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_350sdp"
-            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginRight="@dimen/_5sdp"
             app:cardCornerRadius="@dimen/_10sdp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_10sdp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -407,24 +455,32 @@
                 <WebView
                     android:id="@+id/bchart_guru"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_250sdp" />
+                    android:layout_height="@dimen/_180sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_27sdp"/>
 
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/bc_tendik"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_350sdp"
-            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginRight="@dimen/_5sdp"
             app:cardCornerRadius="@dimen/_10sdp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:paddingBottom="@dimen/_10sdp"
                 android:orientation="vertical">
 
                 <TextView
@@ -439,19 +495,18 @@
                 <WebView
                     android:id="@+id/bchart_tendik"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_250sdp" />
+                    android:layout_height="@dimen/_180sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_27sdp"/>
 
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-
-
-
-
-
-
-
 
 
     </LinearLayout>
