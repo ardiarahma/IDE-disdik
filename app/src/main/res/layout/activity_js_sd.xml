@@ -33,7 +33,7 @@
                 android:layout_marginBottom="@dimen/_5sdp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:gravity="center"
-                android:text="SD - Kota Adm. Jakarta Barat"
+                android:text="SD - Kota Adm. Jakarta Selatan"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_15ssp" />

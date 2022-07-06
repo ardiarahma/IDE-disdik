@@ -24,8 +24,7 @@ public class SekolahJakbarActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SekolahJakbarActivity.this, DataSekolahActivity.class);
-                startActivity(intent);
+                onBackPressed();
             }
         });
 

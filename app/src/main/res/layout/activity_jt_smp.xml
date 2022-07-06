@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".JuSlbActivity">
+    tools:context=".JuSmpActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
                 android:layout_marginBottom="@dimen/_5sdp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:gravity="center"
-                android:text="SLB - Kota Adm. Jakarta Selatan"
+                android:text="SMP - Kota Adm. Jakarta Timur"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_15ssp" />
@@ -103,7 +103,7 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_sekolahSlb"
+        android:id="@+id/rv_sekolahSmp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="@dimen/_5sdp"

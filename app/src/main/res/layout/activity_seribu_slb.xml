@@ -33,7 +33,7 @@
                 android:layout_marginBottom="@dimen/_5sdp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:gravity="center"
-                android:text="SLB - Kota Adm. Jakarta Selatan"
+                android:text="SLB - Kab. Adm. Kepulauan Seribu"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_15ssp" />
