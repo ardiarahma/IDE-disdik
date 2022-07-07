@@ -61,6 +61,18 @@ public interface BaseApi {
     );
 
     @Headers("Content-Type: application/json")
+    @POST("pejabat")
+    Call<PejabatResponse> getDataKasudin(
+            @Body() Unit unit
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("pejabat")
+    Call<PejabatResponse> getDataUpt(
+            @Body() Unit unit
+    );
+
+    @Headers("Content-Type: application/json")
     @POST("rekap")
     Call<RekapResponse> getRekap();
 

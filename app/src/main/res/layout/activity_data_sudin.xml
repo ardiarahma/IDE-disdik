@@ -49,619 +49,622 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/tv_jabatanKasudin1"
+                    android:id="@+id/tvJabatan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
                     android:fontFamily="sans-serif-condensed-medium"
                     android:text="..."
                     android:textSize="@dimen/_15ssp" />
 
                 <LinearLayout
+                    android:id="@+id/ll"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_73sdp"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
                     android:background="@drawable/melon_1"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.7"
-                        android:orientation="vertical">
-                        <TextView
-                            android:id="@+id/tv_namaPejabat1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_10sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-medium"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="...."
-                            android:textSize="@dimen/_14ssp" />
+                    <TextView
+                        android:id="@+id/tvNamaStaf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_14ssp" />
 
-                        <TextView
-                            android:id="@+id/tv_nipSekdis"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_2sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="..."
-                            android:textSize="@dimen/_10ssp" />
+                    <TextView
+                        android:id="@+id/tvNipStaf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_10ssp" />
 
-                        <TextView
-                            android:id="@+id/tv_pangkatSekdis"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_2sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="..."
-                            android:textSize="@dimen/_10ssp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.05"
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:layout_marginBottom="@dimen/_5sdp">
-
-                        <ImageView
-                            android:id="@+id/btn_sekdis"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
-
-                    </LinearLayout>
-
+                    <TextView
+                        android:id="@+id/tvPangkatStaf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="...."
+                        android:textSize="@dimen/_10ssp" />
 
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/tvJabatan2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:text="Bidang Pendiding dan Tenaga Kependidikan "
+                    android:text="..."
                     android:textSize="@dimen/_15ssp" />
 
                 <LinearLayout
+                    android:id="@+id/ll1"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_73sdp"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
                     android:background="@drawable/melon_2"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.7"
-                        android:orientation="vertical">
-                        <TextView
-                            android:id="@+id/tv_ptk"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_10sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-medium"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="..."
-                            android:textSize="@dimen/_14ssp" />
+                    <TextView
+                        android:id="@+id/tvNamaStaf2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_14ssp" />
 
-                        <TextView
-                            android:id="@+id/tv_nipPtk"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_2sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="..."
-                            android:textSize="@dimen/_10ssp" />
+                    <TextView
+                        android:id="@+id/tvNipStaf2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_10ssp" />
 
-                        <TextView
-                            android:id="@+id/tv_pangkatPtk"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_2sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="..."
-                            android:textSize="@dimen/_10ssp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.05"
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:layout_marginBottom="@dimen/_5sdp">
-
-                        <ImageView
-                            android:id="@+id/btn_ptk"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
-
-                    </LinearLayout>
-
+                    <TextView
+                        android:id="@+id/tvPangkatStaf2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="...."
+                        android:textSize="@dimen/_10ssp" />
 
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/tvJabatan3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:text="Bidang Perencanaan dan Anggaran"
+                    android:text="..."
                     android:textSize="@dimen/_15ssp" />
 
                 <LinearLayout
+                    android:id="@+id/ll2"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_73sdp"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
                     android:background="@drawable/melon_3"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.7"
-                        android:orientation="vertical">
-                        <TextView
-                            android:id="@+id/tv_pp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_10sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-medium"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="..."
-                            android:textSize="@dimen/_14ssp" />
+                    <TextView
+                        android:id="@+id/tvNamaStaf3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_14ssp" />
 
-                        <TextView
-                            android:id="@+id/tv_nipPp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_2sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="..."
-                            android:textSize="@dimen/_10ssp" />
+                    <TextView
+                        android:id="@+id/tvNipStaf3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_10ssp" />
 
-                        <TextView
-                            android:id="@+id/tv_pangkatPp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_2sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="..."
-                            android:textSize="@dimen/_10ssp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.05"
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:layout_marginBottom="@dimen/_5sdp">
-
-                        <ImageView
-                            android:id="@+id/btn_pp"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
-
-                    </LinearLayout>
-
+                    <TextView
+                        android:id="@+id/tvPangkatStaf3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="...."
+                        android:textSize="@dimen/_10ssp" />
 
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/tvJabatan4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:text="Bidang PAUD"
+                    android:text="..."
                     android:textSize="@dimen/_15ssp" />
 
                 <LinearLayout
+                    android:id="@+id/ll3"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_73sdp"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
                     android:background="@drawable/melon_1"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.7"
-                        android:orientation="vertical">
-                        <TextView
-                            android:id="@+id/tv_paud"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_10sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-medium"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="...."
-                            android:textSize="@dimen/_14ssp" />
+                    <TextView
+                        android:id="@+id/tvNamaStaf4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_14ssp" />
 
-                        <TextView
-                            android:id="@+id/tv_nipPaud"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_2sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="..."
-                            android:textSize="@dimen/_10ssp" />
+                    <TextView
+                        android:id="@+id/tvNipStaf4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_10ssp" />
 
-                        <TextView
-                            android:id="@+id/tv_pangkatPaud"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_2sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="..."
-                            android:textSize="@dimen/_10ssp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.05"
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:layout_marginBottom="@dimen/_5sdp">
-
-                        <ImageView
-                            android:id="@+id/btn_paud"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
-
-                    </LinearLayout>
-
+                    <TextView
+                        android:id="@+id/tvPangkatStaf4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="...."
+                        android:textSize="@dimen/_10ssp" />
 
                 </LinearLayout>
 
-
                 <TextView
+                    android:id="@+id/tvJabatan5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:text="Bidang SD dan PKLK"
+                    android:text="..."
                     android:textSize="@dimen/_15ssp" />
 
                 <LinearLayout
+                    android:id="@+id/ll4"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_73sdp"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
                     android:background="@drawable/melon_2"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.7"
-                        android:orientation="vertical">
-                        <TextView
-                            android:id="@+id/tv_sd"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_10sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-medium"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="...."
-                            android:textSize="@dimen/_14ssp" />
+                    <TextView
+                        android:id="@+id/tvNamaStaf5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_14ssp" />
 
-                        <TextView
-                            android:id="@+id/tv_nipSd"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_2sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="..."
-                            android:textSize="@dimen/_10ssp" />
+                    <TextView
+                        android:id="@+id/tvNipStaf5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_10ssp" />
 
-                        <TextView
-                            android:id="@+id/tv_pangkatSd"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_2sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="..."
-                            android:textSize="@dimen/_10ssp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.05"
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:layout_marginBottom="@dimen/_5sdp">
-
-                        <ImageView
-                            android:id="@+id/btn_sd"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
-
-                    </LinearLayout>
-
+                    <TextView
+                        android:id="@+id/tvPangkatStaf5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="...."
+                        android:textSize="@dimen/_10ssp" />
 
                 </LinearLayout>
 
-
                 <TextView
+                    android:id="@+id/tvJabatan6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:text="Bidang SMP dan SMA"
+                    android:text="..."
                     android:textSize="@dimen/_15ssp" />
 
                 <LinearLayout
+                    android:id="@+id/ll5"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_73sdp"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
                     android:background="@drawable/melon_3"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.7"
-                        android:orientation="vertical">
-                        <TextView
-                            android:id="@+id/tv_smpsma"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_10sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-medium"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="...."
-                            android:textSize="@dimen/_14ssp" />
+                    <TextView
+                        android:id="@+id/tvNamaStaf6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_14ssp" />
 
-                        <TextView
-                            android:id="@+id/tv_nipSmpsma"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_2sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="..."
-                            android:textSize="@dimen/_10ssp" />
+                    <TextView
+                        android:id="@+id/tvNipStaf6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_10ssp" />
 
-                        <TextView
-                            android:id="@+id/tv_pangkatSmpsma"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_2sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="..."
-                            android:textSize="@dimen/_10ssp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.05"
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:layout_marginBottom="@dimen/_5sdp">
-
-                        <ImageView
-                            android:id="@+id/btn_smpsma"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
-
-                    </LinearLayout>
-
+                    <TextView
+                        android:id="@+id/tvPangkatStaf6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="...."
+                        android:textSize="@dimen/_10ssp" />
 
                 </LinearLayout>
 
-
                 <TextView
+                    android:id="@+id/tvJabatan7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:text="Bidang SMK"
+                    android:text="..."
                     android:textSize="@dimen/_15ssp" />
 
                 <LinearLayout
+                    android:id="@+id/ll6"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_73sdp"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
                     android:background="@drawable/melon_1"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.7"
-                        android:orientation="vertical">
-                        <TextView
-                            android:id="@+id/tv_smk"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_10sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-medium"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="...."
-                            android:textSize="@dimen/_14ssp" />
+                    <TextView
+                        android:id="@+id/tvNamaStaf7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_14ssp" />
 
-                        <TextView
-                            android:id="@+id/tv_nipSmk"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_2sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="..."
-                            android:textSize="@dimen/_10ssp" />
+                    <TextView
+                        android:id="@+id/tvNipStaf7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_10ssp" />
 
-                        <TextView
-                            android:id="@+id/tv_pangkatSmk"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_2sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="..."
-                            android:textSize="@dimen/_10ssp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.05"
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:layout_marginBottom="@dimen/_5sdp">
-
-                        <ImageView
-                            android:id="@+id/btn_smk"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
-
-                    </LinearLayout>
-
+                    <TextView
+                        android:id="@+id/tvPangkatStaf7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="...."
+                        android:textSize="@dimen/_10ssp" />
 
                 </LinearLayout>
 
-
                 <TextView
+                    android:id="@+id/tvJabatan8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:text="Bidang Prasarana dan Sarana Pendidikan"
+                    android:text="..."
                     android:textSize="@dimen/_15ssp" />
 
                 <LinearLayout
+                    android:id="@+id/ll7"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_73sdp"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginRight="@dimen/_5sdp"
                     android:background="@drawable/melon_2"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.7"
-                        android:orientation="vertical">
-                        <TextView
-                            android:id="@+id/tv_prasardik"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_10sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-medium"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="...."
-                            android:textSize="@dimen/_14ssp" />
+                    <TextView
+                        android:id="@+id/tvNamaStaf8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_14ssp" />
 
-                        <TextView
-                            android:id="@+id/tv_nipPrasardik"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_2sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="..."
-                            android:textSize="@dimen/_10ssp" />
+                    <TextView
+                        android:id="@+id/tvNipStaf8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_10ssp" />
 
-                        <TextView
-                            android:id="@+id/tv_pangkatPrasardik"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_2sdp"
-                            android:layout_marginRight="@dimen/_15sdp"
-                            android:fontFamily="sans-serif-condensed-light"
-                            android:paddingStart="@dimen/_15sdp"
-                            android:text="..."
-                            android:textSize="@dimen/_10ssp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.05"
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:layout_marginBottom="@dimen/_5sdp">
-
-                        <ImageView
-                            android:id="@+id/btn_prasardik"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"/>
-
-                    </LinearLayout>
-
+                    <TextView
+                        android:id="@+id/tvPangkatStaf8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="...."
+                        android:textSize="@dimen/_10ssp" />
 
                 </LinearLayout>
 
+                <TextView
+                    android:id="@+id/tvJabatan9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="..."
+                    android:textSize="@dimen/_15ssp" />
+
+                <LinearLayout
+                    android:id="@+id/ll8"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_73sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@drawable/melon_3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNamaStaf9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:id="@+id/tvNipStaf9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+                        android:id="@+id/tvPangkatStaf9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="...."
+                        android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvJabatan10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="..."
+                    android:textSize="@dimen/_15ssp" />
+
+                <LinearLayout
+                    android:id="@+id/ll9"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_73sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@drawable/melon_1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNamaStaf10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:id="@+id/tvNipStaf10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+                        android:id="@+id/tvPangkatStaf10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="...."
+                        android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvJabatan11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="..."
+                    android:textSize="@dimen/_15ssp" />
+
+                <LinearLayout
+                    android:id="@+id/ll10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_73sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@drawable/melon_3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNamaStaf11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:id="@+id/tvNipStaf11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="..."
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+                        android:id="@+id/tvPangkatStaf11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="...."
+                        android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
 
             </LinearLayout>
-
 
         </LinearLayout>
 
