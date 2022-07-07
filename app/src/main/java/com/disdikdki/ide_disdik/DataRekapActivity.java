@@ -88,7 +88,7 @@ public class DataRekapActivity extends AppCompatActivity {
         cookieManager.setAcceptCookie(false);
 
         pchartSekolah = findViewById(R.id.pchart_sekolah);
-        pchartSekolah.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=42&standalone=1&height=300");
+        pchartSekolah.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=53&standalone=1&height=300");
         WebSettings webSettings = pchartSekolah.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webSettings.setBuiltInZoomControls(true);
@@ -109,8 +109,8 @@ public class DataRekapActivity extends AppCompatActivity {
         webSettings2.setLoadWithOverviewMode(true);
 
         pchartTendik = findViewById(R.id.pchart_tendik);
-        pchartSekolah.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=47&standalone=1&height=300");
-        WebSettings webSettings3 = pchartSekolah.getSettings();
+        pchartTendik.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=54&standalone=1&height=300");
+        WebSettings webSettings3 = pchartTendik.getSettings();
         webSettings3.setJavaScriptEnabled(true);
         webSettings3.setBuiltInZoomControls(true);
         webSettings3.setLoadWithOverviewMode(true);

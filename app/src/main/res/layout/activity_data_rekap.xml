@@ -375,7 +375,7 @@
                 <WebView
                     android:id="@+id/bchart_sekolah"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_180sdp"
+                    android:layout_height="@dimen/_300sdp"
                     android:layout_gravity="center"
                     android:layout_marginStart="@dimen/_27sdp"
                     android:layout_marginTop="@dimen/_10sdp"
@@ -415,7 +415,7 @@
                 <WebView
                     android:id="@+id/bchart_pesdik"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_180sdp"
+                    android:layout_height="@dimen/_300sdp"
                     android:layout_gravity="center"
                     android:layout_marginStart="@dimen/_27sdp"
                     android:layout_marginTop="@dimen/_10sdp"
@@ -455,7 +455,7 @@
                 <WebView
                     android:id="@+id/bchart_guru"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_180sdp"
+                    android:layout_height="@dimen/_300sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:layout_gravity="center"
@@ -495,7 +495,7 @@
                 <WebView
                     android:id="@+id/bchart_tendik"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_180sdp"
+                    android:layout_height="@dimen/_300sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:layout_gravity="center"
