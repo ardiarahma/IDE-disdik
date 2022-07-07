@@ -96,7 +96,7 @@
             android:name=".JbPaudActivity"
             android:exported="false" />
         <activity
-        android:name=".JuSmaActivity"
+            android:name=".JuSmaActivity"
             android:exported="false" />
         <activity
             android:name=".JuSmpActivity"

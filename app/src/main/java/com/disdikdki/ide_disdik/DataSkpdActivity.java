@@ -22,8 +22,7 @@ public class DataSkpdActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DataSkpdActivity.this, DataSekolahActivity.class);
-                startActivity(intent);
+                onBackPressed();
             }
         });
 

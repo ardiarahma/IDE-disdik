@@ -134,7 +134,7 @@ public class DataDinasActivity extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             Intent intent = new Intent(DataDinasActivity.this, DataDinasSekdisActivity.class);
-                            intent.putExtra("id_sekdis", pejabats.get(2).getId());
+//                            intent.putExtra("id_sekdis", pejabats.get(2).getId());
                             startActivity(intent);
                         }
                     });
@@ -143,30 +143,86 @@ public class DataDinasActivity extends AppCompatActivity {
                     namaPtk.setText(pejabats.get(3).getNama());
                     nipPtk.setText(pejabats.get(3).getNip());
                     pangkatPtk.setText(pejabats.get(3).getPangkat());
+                    btnPtk.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(DataDinasActivity.this, DataDinasPtkActivity.class);
+//                            intent.putExtra("id_sekdis", pejabats.get(2).getId());
+                            startActivity(intent);
+                        }
+                    });
                     //pp
                     namaPp.setText(pejabats.get(8).getNama());
                     nipPp.setText(pejabats.get(8).getNip());
                     pangkatPp.setText(pejabats.get(8).getPangkat());
+                    btnPp.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(DataDinasActivity.this, DataDinasPpActivity.class);
+//                            intent.putExtra("id_sekdis", pejabats.get(2).getId());
+                            startActivity(intent);
+                        }
+                    });
                     //paud
                     namaPaud.setText(pejabats.get(7).getNama());
                     nipPaud.setText(pejabats.get(7).getNip());
                     pangkatPaud.setText(pejabats.get(7).getPangkat());
+                    btnPaud.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(DataDinasActivity.this, DataDinasPaudActivity.class);
+//                            intent.putExtra("id_sekdis", pejabats.get(2).getId());
+                            startActivity(intent);
+                        }
+                    });
                     //sd
                     namaSd.setText(pejabats.get(4).getNama());
                     nipSd.setText(pejabats.get(4).getNip());
                     pangkatSd.setText(pejabats.get(4).getPangkat());
+                    btnSd.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(DataDinasActivity.this, DataDinasSdActivity.class);
+//                            intent.putExtra("id_sekdis", pejabats.get(2).getId());
+                            startActivity(intent);
+                        }
+                    });
                     //smpsma
                     namaSmpsma.setText(pejabats.get(5).getNama());
                     nipSmpsma.setText(pejabats.get(5).getNip());
                     pangkatSmpsma.setText(pejabats.get(5).getPangkat());
+                    btnSmpsma.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(DataDinasActivity.this, DataDinasSmpsmaActivity.class);
+//                            intent.putExtra("id_sekdis", pejabats.get(2).getId());
+                            startActivity(intent);
+                        }
+                    });
                     //smk
                     namaSmk.setText(pejabats.get(6).getNama());
                     nipSmk.setText(pejabats.get(6).getNip());
                     pangkatSmk.setText(pejabats.get(6).getPangkat());
+                    btnSmk.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(DataDinasActivity.this, DataDinasSmkActivity.class);
+//                            intent.putExtra("id_sekdis", pejabats.get(2).getId());
+                            startActivity(intent);
+                        }
+                    });
                     //prasardik
                     namaPrasardik.setText(pejabats.get(9).getNama());
                     nipPrasardik.setText(pejabats.get(9).getNip());
                     pangkatPrasardik.setText(pejabats.get(9).getPangkat());
+                    btnPrasardik.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(DataDinasActivity.this, DataDinasPrasardikActivity.class);
+//                            intent.putExtra("id_sekdis", pejabats.get(2).getId());
+                            startActivity(intent);
+                        }
+                    });
 
                 }else {
                     Log.i("debug", "onResponse: FAILED");

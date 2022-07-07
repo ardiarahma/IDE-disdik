@@ -53,6 +53,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+
                     android:fontFamily="sans-serif-condensed-medium"
                     android:text="Kepala Dinas "
                     android:textSize="@dimen/_15ssp" />

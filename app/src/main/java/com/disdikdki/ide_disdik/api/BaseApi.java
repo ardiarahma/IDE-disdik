@@ -5,6 +5,7 @@ import com.disdikdki.ide_disdik.model.SekolahBody;
 import com.disdikdki.ide_disdik.model.SekolahResponse;
 import com.disdikdki.ide_disdik.model.PejabatResponse;
 import com.disdikdki.ide_disdik.model.Periode;
+import com.disdikdki.ide_disdik.model.Unit;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -21,6 +22,42 @@ public interface BaseApi {
     @POST("pejabat")
     Call<PejabatResponse> getPejabat(
             @Body() Periode periode_id
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("pejabat")
+    Call<PejabatResponse> getDataSekretariat(
+            @Body() Unit unit
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("pejabat")
+    Call<PejabatResponse> getDataPtk(
+            @Body() Unit unit
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("pejabat")
+    Call<PejabatResponse> getDataPp(
+            @Body() Unit unit
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("pejabat")
+    Call<PejabatResponse> getDataSd(
+            @Body() Unit unit
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("pejabat")
+    Call<PejabatResponse> getDataSmpSma(
+            @Body() Unit unit
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("pejabat")
+    Call<PejabatResponse> getDataSmk(
+            @Body() Unit unit
     );
 
     @Headers("Content-Type: application/json")
