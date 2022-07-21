@@ -19,6 +19,7 @@ public class RetrofitClient {
     private RetrofitClient(){
         retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
+                .client(getClient())
                 .addConverterFactory(ScalarsConverterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
@@ -37,9 +38,6 @@ public class RetrofitClient {
                     Request original = chain.request();
                     Request.Builder builder = original.newBuilder().method(original.method(), original.body());
                     builder.header("Accept", "application/json");
-//                    if (!SharedPrefManager.getInstance(context).getStr("token").equals("null")) {
-//                        builder.header("Authorization", SharedPrefManager.getInstance(context).getStr("token"));
-//                    }
                     return chain.proceed(builder.build());
                 })
                 .build();

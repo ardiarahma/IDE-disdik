@@ -2,6 +2,8 @@ package com.disdikdki.ide_disdik;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -11,11 +13,13 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.disdikdki.ide_disdik.adapter.JenjangAdapter;
 import com.disdikdki.ide_disdik.adapter.PkbmAdapter;
 import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.Sekolah;
 import com.disdikdki.ide_disdik.model.SekolahBody;
 import com.disdikdki.ide_disdik.model.SekolahResponse;
+import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
 
@@ -27,10 +31,11 @@ public class JtPkbmActivity extends AppCompatActivity {
 
     ImageView back;
     RecyclerView rvPkbm;
+    TextInputEditText etNamaSekolah;
 
     ArrayList<SekolahResponse> sekolahResponses;
     ArrayList<Sekolah> sekolahs;
-    PkbmAdapter pkbmAdapter;
+    JenjangAdapter pkbmAdapter;
     Context context;
 
     @Override
@@ -47,6 +52,7 @@ public class JtPkbmActivity extends AppCompatActivity {
         });
 
         rvPkbm = findViewById(R.id.rv_sekolahPkbm);
+        etNamaSekolah = findViewById(R.id.et_namaSekolah);
 
         SekolahBody body = new SekolahBody("PKBM", "Jakarta Timur", 1000, 0);
 
@@ -68,7 +74,7 @@ public class JtPkbmActivity extends AppCompatActivity {
                     rvPkbm.setLayoutManager(layoutManager);
                     rvPkbm.setItemAnimator(new DefaultItemAnimator());
                     rvPkbm.setHasFixedSize(true);
-                    pkbmAdapter = new PkbmAdapter(sekolahs, JtPkbmActivity.this);
+                    pkbmAdapter = new JenjangAdapter(sekolahs, JtPkbmActivity.this);
                     rvPkbm.setAdapter(pkbmAdapter);
                     pkbmAdapter.notifyDataSetChanged();
 
@@ -80,5 +86,33 @@ public class JtPkbmActivity extends AppCompatActivity {
 
             }
         });
+        etNamaSekolah.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                filter(s.toString());
+            }
+        });
+    }
+
+    public void filter(String text) {
+        ArrayList<Sekolah> filteredList = new ArrayList<>();
+        for (Sekolah d : sekolahs) {
+            if (d.getNama_sekolah().contains(text.toLowerCase())) {
+                filteredList.add(d);
+            } else if (d.getNama_sekolah().contains(text.toUpperCase())) {
+                filteredList.add(d);
+            }
+        }
+        pkbmAdapter.updateList(filteredList);
     }
 }

@@ -6,15 +6,19 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.disdikdki.ide_disdik.adapter.JenjangAdapter;
 import com.disdikdki.ide_disdik.adapter.SmpAdapter;
 import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.Sekolah;
 import com.disdikdki.ide_disdik.model.SekolahBody;
 import com.disdikdki.ide_disdik.model.SekolahResponse;
+import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
 
@@ -26,10 +30,11 @@ public class JpSmpActivity extends AppCompatActivity {
 
     ImageView back;
     RecyclerView rvSmpJp;
+    TextInputEditText etNamaSekolah;
 
     ArrayList<SekolahResponse> sekolahResponses;
     ArrayList<Sekolah> sekolahs;
-    SmpAdapter smpAdapter;
+    JenjangAdapter smpAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +50,7 @@ public class JpSmpActivity extends AppCompatActivity {
         });
 
         rvSmpJp = findViewById(R.id.rv_sekolahSmp);
+        etNamaSekolah = findViewById(R.id.et_namaSekolah);
 
         SekolahBody body = new SekolahBody("SMP", "Jakarta Pusat", 1000, 0);
 
@@ -66,7 +72,7 @@ public class JpSmpActivity extends AppCompatActivity {
                     rvSmpJp.setLayoutManager(layoutManager);
                     rvSmpJp.setItemAnimator(new DefaultItemAnimator());
                     rvSmpJp.setHasFixedSize(true);
-                    smpAdapter = new SmpAdapter(sekolahs, JpSmpActivity.this);
+                    smpAdapter = new JenjangAdapter(sekolahs, JpSmpActivity.this);
                     rvSmpJp.setAdapter(smpAdapter);
                     smpAdapter.notifyDataSetChanged();
 
@@ -78,5 +84,33 @@ public class JpSmpActivity extends AppCompatActivity {
 
             }
         });
+        etNamaSekolah.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                filter(s.toString());
+            }
+        });
+    }
+
+    public void filter(String text) {
+        ArrayList<Sekolah> filteredList = new ArrayList<>();
+        for (Sekolah d : sekolahs) {
+            if (d.getNama_sekolah().contains(text.toLowerCase())) {
+                filteredList.add(d);
+            } else if (d.getNama_sekolah().contains(text.toUpperCase())) {
+                filteredList.add(d);
+            }
+        }
+        smpAdapter.updateList(filteredList);
     }
 }

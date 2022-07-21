@@ -2,6 +2,8 @@ package com.disdikdki.ide_disdik;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -11,11 +13,13 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.disdikdki.ide_disdik.adapter.JenjangAdapter;
 import com.disdikdki.ide_disdik.adapter.SdAdapter;
 import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.Sekolah;
 import com.disdikdki.ide_disdik.model.SekolahBody;
 import com.disdikdki.ide_disdik.model.SekolahResponse;
+import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
 
@@ -27,10 +31,11 @@ public class JuSdActivity extends AppCompatActivity {
 
     ImageView back;
     RecyclerView rvSd;
+    TextInputEditText etNamaSekolah;
 
     ArrayList<SekolahResponse> sekolahResponses;
     ArrayList<Sekolah> sekolahs;
-    SdAdapter sdAdapter;
+    JenjangAdapter sdAdapter;
     Context context;
 
     @Override
@@ -47,6 +52,7 @@ public class JuSdActivity extends AppCompatActivity {
         });
 
         rvSd = findViewById(R.id.rv_sekolahSd);
+        etNamaSekolah = findViewById(R.id.et_namaSekolah);
 
         SekolahBody body = new SekolahBody("SD", "Jakarta Utara", 1000, 0);
 
@@ -68,7 +74,7 @@ public class JuSdActivity extends AppCompatActivity {
                     rvSd.setLayoutManager(layoutManager);
                     rvSd.setItemAnimator(new DefaultItemAnimator());
                     rvSd.setHasFixedSize(true);
-                    sdAdapter = new SdAdapter(sekolahs, JuSdActivity.this);
+                    sdAdapter = new JenjangAdapter(sekolahs, JuSdActivity.this);
                     rvSd.setAdapter(sdAdapter);
                     sdAdapter.notifyDataSetChanged();
 
@@ -80,5 +86,33 @@ public class JuSdActivity extends AppCompatActivity {
 
             }
         });
+        etNamaSekolah.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                filter(s.toString());
+            }
+        });
+    }
+
+    public void filter(String text) {
+        ArrayList<Sekolah> filteredList = new ArrayList<>();
+        for (Sekolah d : sekolahs) {
+            if (d.getNama_sekolah().contains(text.toLowerCase())) {
+                filteredList.add(d);
+            } else if (d.getNama_sekolah().contains(text.toUpperCase())) {
+                filteredList.add(d);
+            }
+        }
+        sdAdapter.updateList(filteredList);
     }
 }

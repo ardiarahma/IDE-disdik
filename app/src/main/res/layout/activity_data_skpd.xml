@@ -234,7 +234,7 @@
                         android:fontFamily="sans-serif-condensed-medium"
                         android:gravity="center"
                         android:paddingRight="@dimen/_20sdp"
-                        android:text="Data Unit Pelayanan Terpadu"
+                        android:text="Data Unit Pelaksana Teknis"
                         android:textSize="@dimen/_17ssp" />
 
                 </RelativeLayout>

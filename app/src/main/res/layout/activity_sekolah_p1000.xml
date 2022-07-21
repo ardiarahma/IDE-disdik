@@ -60,14 +60,39 @@
                     android:text="Sebaran Sekolah"
                     android:textSize="@dimen/_15ssp" />
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:fontFamily="sans-serif-condensed-light"
+                    android:orientation="horizontal"
                     android:gravity="center"
-                    android:text="Cut Off Juni 2022"
-                    android:textSize="@dimen/_12ssp" />
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:text="Cut Off "
+                        android:textSize="@dimen/_12ssp"
+                        android:paddingEnd="@dimen/_2sdp"/>
+
+                    <TextView
+                        android:id="@+id/tvMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:text=".. "
+                        android:textSize="@dimen/_12ssp"
+                        android:paddingEnd="@dimen/_2sdp"/>
+
+                    <TextView
+                        android:id="@+id/tvYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:text="..."
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
 
                 <WebView
                     android:id="@+id/chart"

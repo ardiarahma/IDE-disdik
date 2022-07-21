@@ -1,8 +1,11 @@
 package com.disdikdki.ide_disdik;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,11 +13,13 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.disdikdki.ide_disdik.adapter.JenjangAdapter;
 import com.disdikdki.ide_disdik.adapter.SmpAdapter;
 import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.Sekolah;
 import com.disdikdki.ide_disdik.model.SekolahBody;
 import com.disdikdki.ide_disdik.model.SekolahResponse;
+import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
 
@@ -26,10 +31,11 @@ public class JsSmpActivity extends AppCompatActivity {
 
     ImageView back;
     RecyclerView rvSmp;
+    TextInputEditText etNamaSekolah;
 
     ArrayList<SekolahResponse> sekolahResponses;
     ArrayList<Sekolah> sekolahs;
-    SmpAdapter smpAdapter;
+    JenjangAdapter smpAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +51,8 @@ public class JsSmpActivity extends AppCompatActivity {
         });
 
         rvSmp = findViewById(R.id.rv_sekolahSmp);
+        etNamaSekolah = findViewById(R.id.et_namaSekolah);
+
 
         SekolahBody body = new SekolahBody("SMP", "Jakarta Selatan", 1000, 0);
 
@@ -66,7 +74,7 @@ public class JsSmpActivity extends AppCompatActivity {
                     rvSmp.setLayoutManager(layoutManager);
                     rvSmp.setItemAnimator(new DefaultItemAnimator());
                     rvSmp.setHasFixedSize(true);
-                    smpAdapter = new SmpAdapter(sekolahs, JsSmpActivity.this);
+                    smpAdapter = new JenjangAdapter(sekolahs, JsSmpActivity.this);
                     rvSmp.setAdapter(smpAdapter);
                     smpAdapter.notifyDataSetChanged();
 
@@ -78,5 +86,34 @@ public class JsSmpActivity extends AppCompatActivity {
 
             }
         });
+
+        etNamaSekolah.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                filter(s.toString());
+            }
+        });
+    }
+
+    public void filter(String text){
+        ArrayList<Sekolah> filteredList = new ArrayList<>();
+        for (Sekolah d: sekolahs){
+            if (d.getNama_sekolah().contains(text.toLowerCase())){
+                filteredList.add(d);
+            }else if (d.getNama_sekolah().contains(text.toUpperCase())){
+                filteredList.add(d);
+            }
+        }
+        smpAdapter.updateList(filteredList);
     }
 }

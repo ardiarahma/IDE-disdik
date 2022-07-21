@@ -7,19 +7,32 @@ import java.util.ArrayList;
 
 public class DataSekolah {
 
-    @SerializedName("data")
+    @SerializedName("limit")
     @Expose
-    private ArrayList<Sekolah> sekolahs;
+    private int limit;
 
-    public DataSekolah(ArrayList<Sekolah> sekolahs) {
-        this.sekolahs = sekolahs;
+    @SerializedName("offset")
+    @Expose
+    private int offset;
+
+    public DataSekolah(int limit, int offset) {
+        this.limit = limit;
+        this.offset = offset;
     }
 
-    public ArrayList<Sekolah> getSekolahs() {
-        return sekolahs;
+    public int getLimit() {
+        return limit;
     }
 
-    public void setSekolahs(ArrayList<Sekolah> sekolahs) {
-        this.sekolahs = sekolahs;
+    public void setLimit(int limit) {
+        this.limit = limit;
+    }
+
+    public int getOffset() {
+        return offset;
+    }
+
+    public void setOffset(int offset) {
+        this.offset = offset;
     }
 }

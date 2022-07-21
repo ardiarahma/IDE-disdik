@@ -7,15 +7,19 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.disdikdki.ide_disdik.adapter.JenjangAdapter;
 import com.disdikdki.ide_disdik.adapter.PkbmAdapter;
 import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.SekolahResponse;
 import com.disdikdki.ide_disdik.model.Sekolah;
 import com.disdikdki.ide_disdik.model.SekolahBody;
+import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
 
@@ -27,10 +31,11 @@ public class JpPkbmActivity extends AppCompatActivity {
 
     ImageView back;
     RecyclerView rvPkbmJp;
+    TextInputEditText etNamaSekolah;
 
     ArrayList<SekolahResponse> sekolahResponses;
     ArrayList<Sekolah> sekolahs;
-    PkbmAdapter pkbmAdapter;
+    JenjangAdapter pkbmAdapter;
     Context context;
 
     @Override
@@ -47,6 +52,7 @@ public class JpPkbmActivity extends AppCompatActivity {
         });
 
         rvPkbmJp = findViewById(R.id.rv_sekolahPkbm);
+        etNamaSekolah = findViewById(R.id.et_namaSekolah);
 
         SekolahBody body = new SekolahBody("PKBM", "Jakarta Pusat", 1000, 0);
 
@@ -68,7 +74,7 @@ public class JpPkbmActivity extends AppCompatActivity {
                     rvPkbmJp.setLayoutManager(layoutManager);
                     rvPkbmJp.setItemAnimator(new DefaultItemAnimator());
                     rvPkbmJp.setHasFixedSize(true);
-                    pkbmAdapter = new PkbmAdapter(sekolahs, JpPkbmActivity.this);
+                    pkbmAdapter = new JenjangAdapter(sekolahs, JpPkbmActivity.this);
                     rvPkbmJp.setAdapter(pkbmAdapter);
                     pkbmAdapter.notifyDataSetChanged();
 
@@ -80,5 +86,33 @@ public class JpPkbmActivity extends AppCompatActivity {
 
             }
         });
+        etNamaSekolah.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                filter(s.toString());
+            }
+        });
+    }
+
+    public void filter(String text) {
+        ArrayList<Sekolah> filteredList = new ArrayList<>();
+        for (Sekolah d : sekolahs) {
+            if (d.getNama_sekolah().contains(text.toLowerCase())) {
+                filteredList.add(d);
+            } else if (d.getNama_sekolah().contains(text.toUpperCase())) {
+                filteredList.add(d);
+            }
+        }
+        pkbmAdapter.updateList(filteredList);
     }
 }

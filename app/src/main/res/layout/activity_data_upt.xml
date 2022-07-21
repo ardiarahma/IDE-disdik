@@ -37,7 +37,7 @@
                     android:layout_marginBottom="@dimen/_5sdp"
                     android:fontFamily="sans-serif-condensed-medium"
                     android:gravity="center"
-                    android:text="Unit Pelayanan Terpadu \nPendidikan Prov. DKI Jakarta"
+                    android:text="Unit Pelaksana Teknis \nPendidikan Prov. DKI Jakarta"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_15ssp" />

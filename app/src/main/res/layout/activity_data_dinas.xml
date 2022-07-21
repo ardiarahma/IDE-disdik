@@ -182,6 +182,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/llSekdis"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.7"
@@ -245,7 +246,7 @@
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:text="Bidang Pendiding dan Tenaga Kependidikan "
+                    android:text="Bidang Pendidik dan Tenaga Kependidikan "
                     android:textSize="@dimen/_15ssp" />
 
                 <LinearLayout
@@ -258,6 +259,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/llPtk"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.7"
@@ -333,6 +335,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/llPp"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.7"
@@ -408,6 +411,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/llPaud"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.7"
@@ -485,6 +489,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/llSd"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.7"
@@ -562,6 +567,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/llSmpsma"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.7"
@@ -639,6 +645,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/llSmk"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.7"
@@ -716,6 +723,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/llPrasardik"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.7"

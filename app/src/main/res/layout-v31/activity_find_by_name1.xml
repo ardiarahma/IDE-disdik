@@ -83,47 +83,114 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-
-            <!--                    <EditText-->
-            <!--                        android:id="@+id/et_namaSekolah"-->
-            <!--                        android:layout_width="match_parent"-->
-            <!--                        android:layout_height="wrap_content"-->
-            <!--                        android:fontFamily="sans-serif-condensed"-->
-            <!--                        android:inputType="text"-->
-            <!--                        android:textSize="@dimen/_12ssp" />-->
-
-            <!--                </com.google.android.material.textfield.TextInputLayout>-->
-
         </LinearLayout>
+
     </LinearLayout>
 
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/nsv_master"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbarThumbHorizontal="@null"
-        android:scrollbarThumbVertical="@null">
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_10sdp">
 
         <LinearLayout
+            android:id="@+id/ll_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/_160sdp"-->
+<!--                android:layout_height="@dimen/_110sdp"-->
+<!--                android:src="@drawable/img_no_data" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Data tidak ditemukan."
+                android:textAlignment="center"
+                android:textColor="@color/bar_negeri"
+                android:textSize="@dimen/_10ssp" />
+        </LinearLayout>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/sfl_loading"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:shimmer_duration="1000">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_75sdp"
+                    android:background="@android:color/system_accent2_400" />
+
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <LinearLayout
+            android:id="@+id/sekolah_master"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_sekolah"
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nsv_master"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:nestedScrollingEnabled="false" />
+                android:layout_height="match_parent"
+                android:scrollbarThumbHorizontal="@null"
+                android:scrollbarThumbVertical="@null">
 
-<!--            <View-->
-<!--                android:id="@+id/v_dummy"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="@dimen/_60sdp"-->
-<!--                android:visibility="gone" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_sekolah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"/>
+
+                    <View
+                        android:id="@+id/v_dummy"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_60sdp"
+                        android:visibility="gone"/>
+                    
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
 
         </LinearLayout>
 
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/av_loading"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_below="@+id/sekolah_master"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/load_splashscreen" />
 
-    </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
 
 </LinearLayout>

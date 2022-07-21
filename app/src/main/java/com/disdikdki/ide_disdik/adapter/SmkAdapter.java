@@ -67,6 +67,11 @@ public class SmkAdapter extends RecyclerView.Adapter<SmkAdapter.ViewHolder>{
         return sekolahs.size();
     }
 
+    public void updateList(ArrayList<Sekolah> filteredList){
+        sekolahs = filteredList;
+        notifyDataSetChanged();
+    }
+
     public class ViewHolder extends RecyclerView.ViewHolder {
         private String namasekolah, npsn, alamat, kel, kec, kota, prov, sudin, telp, kepsek, hpkepsek;
         private int jmlPesdik, jmlGuru, jmlTendik;

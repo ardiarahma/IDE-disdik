@@ -1,5 +1,7 @@
 package com.disdikdki.ide_disdik.api;
 
+import com.disdikdki.ide_disdik.model.CutoffResponse;
+import com.disdikdki.ide_disdik.model.DataSekolah;
 import com.disdikdki.ide_disdik.model.RekapResponse;
 import com.disdikdki.ide_disdik.model.SekolahBody;
 import com.disdikdki.ide_disdik.model.SekolahResponse;
@@ -16,7 +18,17 @@ public interface BaseApi {
 
     @Headers("Content-Type: application/json")
     @POST("sekolah")
+    Call<SekolahResponse> getSchool(
+            @Body() DataSekolah limit
+    );
+
+    @Headers("Content-Type: application/json")
+    @POST("sekolah")
     Call<SekolahResponse> getSchool();
+
+    @Headers("Content-Type: application/json")
+    @POST("cutoff")
+    Call<CutoffResponse> getCutoff();
 
     @Headers("Content-Type: application/json")
     @POST("pejabat")

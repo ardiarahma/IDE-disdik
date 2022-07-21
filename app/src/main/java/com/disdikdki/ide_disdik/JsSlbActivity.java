@@ -1,6 +1,8 @@
 package com.disdikdki.ide_disdik;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -10,11 +12,13 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.disdikdki.ide_disdik.adapter.JenjangAdapter;
 import com.disdikdki.ide_disdik.adapter.SlbAdapter;
 import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.Sekolah;
 import com.disdikdki.ide_disdik.model.SekolahBody;
 import com.disdikdki.ide_disdik.model.SekolahResponse;
+import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
 
@@ -26,10 +30,11 @@ public class JsSlbActivity extends AppCompatActivity {
 
     ImageView back;
     RecyclerView rvSlb;
+    TextInputEditText etNamaSekolah;
 
     ArrayList<SekolahResponse> sekolahResponses;
     ArrayList<Sekolah> sekolahs;
-    SlbAdapter slbAdapter;
+    JenjangAdapter slbAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +50,7 @@ public class JsSlbActivity extends AppCompatActivity {
         });
 
         rvSlb = findViewById(R.id.rv_sekolahSlb);
+        etNamaSekolah = findViewById(R.id.et_namaSekolah);
 
         SekolahBody body = new SekolahBody("SLB", "Jakarta Selatan", 1000, 0);
 
@@ -66,7 +72,7 @@ public class JsSlbActivity extends AppCompatActivity {
                     rvSlb.setLayoutManager(layoutManager);
                     rvSlb.setItemAnimator(new DefaultItemAnimator());
                     rvSlb.setHasFixedSize(true);
-                    slbAdapter = new SlbAdapter(sekolahs, JsSlbActivity.this);
+                    slbAdapter = new JenjangAdapter(sekolahs, JsSlbActivity.this);
                     rvSlb.setAdapter(slbAdapter);
                     slbAdapter.notifyDataSetChanged();
 
@@ -78,5 +84,33 @@ public class JsSlbActivity extends AppCompatActivity {
 
             }
         });
+        etNamaSekolah.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                filter(s.toString());
+            }
+        });
+    }
+
+    public void filter(String text) {
+        ArrayList<Sekolah> filteredList = new ArrayList<>();
+        for (Sekolah d : sekolahs) {
+            if (d.getNama_sekolah().contains(text.toLowerCase())) {
+                filteredList.add(d);
+            } else if (d.getNama_sekolah().contains(text.toUpperCase())) {
+                filteredList.add(d);
+            }
+        }
+        slbAdapter.updateList(filteredList);
     }
 }

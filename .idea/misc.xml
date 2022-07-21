@@ -17,6 +17,7 @@
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/drawable/potrait.xml" value="0.1505" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/drawable/potrait_circle_corner.xml" value="0.116" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/drawable/white_corner.xml" value="0.1235" />
+        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout-v31/activity_find_by_name1.xml" value="0.18177083333333333" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_bidang_sekretariat.xml" value="0.1496365968362548" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_bidang_smp.xml" value="0.1496365968362548" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_data_dinas.xml" value="0.2" />
@@ -35,7 +36,8 @@
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_data_sudin.xml" value="0.1496365968362548" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_data_upt.xml" value="0.1496365968362548" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_find_by_district.xml" value="0.18" />
-        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_find_by_name.xml" value="0.25" />
+        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_find_by_name.xml" value="0.1" />
+        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_find_by_name1.xml" value="0.1" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_jb_paud.xml" value="0.1496365968362548" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_jb_pkbm.xml" value="0.1496365968362548" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_jb_sd.xml" value="0.1496365968362548" />
@@ -74,7 +76,7 @@
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_main2.xml" value="0.1496365968362548" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_sekolah_jakbar.xml" value="0.18" />
-        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_sekolah_jakpus.xml" value="0.2" />
+        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_sekolah_jakpus.xml" value="0.33" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_sekolah_jaksel.xml" value="0.1496365968362548" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_sekolah_jaktim.xml" value="0.1" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_sekolah_jakut.xml" value="0.1496365968362548" />
@@ -86,9 +88,10 @@
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_seribu_sma.xml" value="0.1496365968362548" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_seribu_smk.xml" value="0.1496365968362548" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_seribu_smp.xml" value="0.1496365968362548" />
-        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_splash_screen.xml" value="0.14" />
+        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/activity_splash_screen.xml" value="0.21" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/dialog_sekolah.xml" value="0.26429479034307496" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/item_pejabat_dinas.xml" value="0.1496365968362548" />
+        <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/item_progress.xml" value="0.1496365968362548" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/item_sekolah.xml" value="0.25" />
         <entry key="..\:/#WORK/disdik-project/IDE-disdik/app/src/main/res/layout/slider_img.xml" value="0.2" />
       </map>

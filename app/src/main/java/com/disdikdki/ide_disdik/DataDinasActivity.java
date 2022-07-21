@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,7 +36,7 @@ public class DataDinasActivity extends AppCompatActivity {
             namaSmpsma, nipSmpsma, pangkatSmpsma,
             namaSmk, nipSmk, pangkatSmk,
             namaPrasardik, nipPrasardik, pangkatPrasardik;
-    ImageView btnSekdis, btnPtk, btnPp, btnPaud, btnSd, btnSmpsma, btnSmk, btnPrasardik;
+    LinearLayout btnSekdis, btnPtk, btnPp, btnPaud, btnSd, btnSmpsma, btnSmk, btnPrasardik;
 
     ArrayList<Pejabat> pejabats;
 
@@ -93,14 +94,14 @@ public class DataDinasActivity extends AppCompatActivity {
         nipPrasardik = findViewById(R.id.tv_nipPrasardik);
         pangkatPrasardik = findViewById(R.id.tv_pangkatPrasardik);
 
-        btnSekdis = findViewById(R.id.btn_sekdis);
-        btnPtk = findViewById(R.id.btn_ptk);
-        btnPp = findViewById(R.id.btn_pp);
-        btnPaud = findViewById(R.id.btn_paud);
-        btnSd = findViewById(R.id.btn_sd);
-        btnSmpsma = findViewById(R.id.btn_smpsma);
-        btnSmk = findViewById(R.id.btn_smk);
-        btnPrasardik = findViewById(R.id.btn_prasardik);
+        btnSekdis = findViewById(R.id.llSekdis);
+        btnPtk = findViewById(R.id.llPtk);
+        btnPp = findViewById(R.id.llPp);
+        btnPaud = findViewById(R.id.llPaud);
+        btnSd = findViewById(R.id.llSd);
+        btnSmpsma = findViewById(R.id.llSmpsma);
+        btnSmk = findViewById(R.id.llSmk);
+        btnPrasardik = findViewById(R.id.llPrasardik);
 
         Periode periode = new Periode("202206");
 
