@@ -2,6 +2,7 @@ package com.disdikdki.ide_disdik;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -90,6 +91,71 @@ public class DataUptActivity extends AppCompatActivity {
         namaStaf8 = findViewById(R.id.tvNamaStaf8);
         nipStaf8 = findViewById(R.id.tvNipStaf8);
         pangkatStaf8 = findViewById(R.id.tvPangkatStaf8);
+
+        btnP4op = findViewById(R.id.ll);
+        btnP4op.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DataUptActivity.this, DataUptP4opActivity.class);
+                startActivity(intent);
+            }
+        });
+//        btnP3paud = findViewById(R.id.ll1);
+//        btnP3paud.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(DataUptActivity.this, DataUptP3paudActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+        btnPusda = findViewById(R.id.ll2);
+        btnPusda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DataUptActivity.this, DataUptPusdaActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnJp = findViewById(R.id.ll3);
+        btnJp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DataUptActivity.this, DataUptJpActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnJu = findViewById(R.id.ll4);
+        btnJu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DataUptActivity.this, DataUptJuActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnJb = findViewById(R.id.ll5);
+        btnJb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DataUptActivity.this, DataUptJbActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnJs = findViewById(R.id.ll6);
+        btnJs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DataUptActivity.this, DataUptJsActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnJt = findViewById(R.id.ll7);
+        btnJt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DataUptActivity.this, DataUptJtActivity.class);
+                startActivity(intent);
+            }
+        });
 
         Unit unit = new Unit("202206", "UPT");
 

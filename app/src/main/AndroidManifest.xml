@@ -12,6 +12,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IDEdisdik">
         <activity
+            android:name=".DataUptJtActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataUptJpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataUptJuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataUptJbActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataUptJsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataUptPusdaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataUptP4opActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataUptP3paudActivity"
+            android:exported="false" />
+        <activity
             android:name=".JtSmkActivity"
             android:exported="false" />
         <activity

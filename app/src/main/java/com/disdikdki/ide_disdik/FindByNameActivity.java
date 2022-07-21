@@ -129,7 +129,7 @@ public class FindByNameActivity extends AppCompatActivity {
     public void getDataSekolah() {
         offset = 50;
         DataSekolah limit = new DataSekolah(10000, 50);
-        SekolahResponse = limit.getSchool
+
 
         Call<SekolahResponse> call = RetrofitClient
                 .getInstance()
