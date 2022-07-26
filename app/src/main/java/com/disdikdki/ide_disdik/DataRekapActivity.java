@@ -18,6 +18,7 @@ import com.disdikdki.ide_disdik.api.RetrofitClient;
 import com.disdikdki.ide_disdik.model.Rekap;
 import com.disdikdki.ide_disdik.model.RekapResponse;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 import retrofit2.Call;
@@ -32,6 +33,8 @@ public class DataRekapActivity extends AppCompatActivity {
     TextView jumlahSekolah, jumlahPesdik, jumlahGuru, jumlahTendik;
 
     ArrayList<Rekap> rekaps;
+
+    DecimalFormat formater = new DecimalFormat("#,###,###");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,10 +68,10 @@ public class DataRekapActivity extends AppCompatActivity {
                 if (rekapResponse != null && rekapResponse.getError() == null){
                     Log.i("debug", "onResponse : SUCCESSFUL");
                     rekaps = rekapResponse.getRekapArrayList();
-                    jumlahSekolah.setText(String.valueOf(rekaps.get(0).getJumlahSekolah()));
-                    jumlahPesdik.setText(String.valueOf(rekaps.get(0).getJumlahPesdik()));
-                    jumlahGuru.setText(String.valueOf(rekaps.get(0).getJumlahGuru()));
-                    jumlahTendik.setText(String.valueOf(rekaps.get(0).getJumlahTendik()));
+                    jumlahSekolah.setText(String.valueOf(formater.format(rekaps.get(0).getJumlahSekolah())));
+                    jumlahPesdik.setText(String.valueOf(formater.format(rekaps.get(0).getJumlahPesdik())));
+                    jumlahGuru.setText(String.valueOf(formater.format(rekaps.get(0).getJumlahGuru())));
+                    jumlahTendik.setText(String.valueOf(formater.format(rekaps.get(0).getJumlahTendik())));
                 }else {
                     Log.i("debug", "onResponse: FAILED");
                     Toast.makeText(getApplicationContext(), "Gagal dalam mengambil data", Toast.LENGTH_LONG).show();
@@ -95,8 +98,8 @@ public class DataRekapActivity extends AppCompatActivity {
         webSettings.setLoadWithOverviewMode(true);
 
         pchartPesdik = findViewById(R.id.pchart_pesdik);
-        pchartPesdik.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?form_data=%7B%22viz_type%22%3A%22pie%22%2C%22datasource%22%3A%229__table%22%2C%22slice_id%22%3A14%2C%22url_params%22%3A%7B%22standalone%22%3A%221%22%2C%22height%22%3A%22300%22%7D%2C%22time_range_endpoints%22%3A%5B%22inclusive%22%2C%22exclusive%22%5D%2C%22time_range%22%3A%22No+filter%22%2C%22groupby%22%3A%5B%22status_sekolah%22%5D%2C%22metric%22%3A%7B%22aggregate%22%3A%22SUM%22%2C%22column%22%3A%7B%22certification_details%22%3Anull%2C%22certified_by%22%3Anull%2C%22column_name%22%3A%22JUMLAH_PD%22%2C%22description%22%3Anull%2C%22expression%22%3Anull%2C%22filterable%22%3Atrue%2C%22groupby%22%3Atrue%2C%22id%22%3A114%2C%22is_certified%22%3Afalse%2C%22is_dttm%22%3Afalse%2C%22python_date_format%22%3Anull%2C%22type%22%3A%22INT%22%2C%22type_generic%22%3A0%2C%22verbose_name%22%3Anull%2C%22warning_markdown%22%3Anull%7D%2C%22expressionType%22%3A%22SIMPLE%22%2C%22hasCustomLabel%22%3Afalse%2C%22isNew%22%3Afalse%2C%22label%22%3A%22SUM%28JUMLAH_PD%29%22%2C%22optionName%22%3A%22metric_75r2st0heam_k1xagl8rx3h%22%2C%22sqlExpression%22%3Anull%7D%2C%22adhoc_filters%22%3A%5B%5D%2C%22row_limit%22%3A1000%2C%22sort_by_metric%22%3Atrue%2C%22color_scheme%22%3A%22d3Category10%22%2C%22show_labels_threshold%22%3A%220%22%2C%22legendType%22%3A%22scroll%22%2C%22legendOrientation%22%3A%22top%22%2C%22label_type%22%3A%22key_value_percent%22%2C%22number_format%22%3A%22%2Cd%22%2C%22date_format%22%3A%22smart_date%22%2C%22show_labels%22%3Atrue%2C%22labels_outside%22%3Atrue%2C%22label_line%22%3Atrue%2C%22outerRadius%22%3A80%2C%22donut%22%3Atrue%2C%22innerRadius%22%3A34%2C%22extra_form_data%22%3A%7B%7D%7D&standalone=1");
-//        pchartPesdik.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=43&standalone=1&height=300");
+//        pchartPesdik.loadUrl("\"https://dashboard.pusdatikomdik.id/superset/explore/?r=68&standalone=1&height=300");
+        pchartPesdik.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=43&standalone=1&height=300");
         WebSettings webSettings1 = pchartPesdik.getSettings();
         webSettings1.setJavaScriptEnabled(true);
         webSettings1.setBuiltInZoomControls(true);
@@ -110,7 +113,8 @@ public class DataRekapActivity extends AppCompatActivity {
         webSettings2.setLoadWithOverviewMode(true);
 
         pchartTendik = findViewById(R.id.pchart_tendik);
-        pchartTendik.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=54&standalone=1&height=300");
+        pchartTendik.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=69&standalone=1&height=300");
+//        pchartTendik.loadUrl("https://dashboard.pusdatikomdik.id/superset/explore/?r=54&standalone=1&height=300");
         WebSettings webSettings3 = pchartTendik.getSettings();
         webSettings3.setJavaScriptEnabled(true);
         webSettings3.setBuiltInZoomControls(true);

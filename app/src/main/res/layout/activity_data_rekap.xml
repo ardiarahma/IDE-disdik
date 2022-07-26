@@ -214,7 +214,7 @@
                 <WebView
                     android:id="@+id/pchart_sekolah"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp"
+                    android:layout_height="250dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:layout_marginBottom="@dimen/_10sdp"
@@ -252,7 +252,7 @@
                 <WebView
                     android:id="@+id/pchart_pesdik"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_180sdp"
+                    android:layout_height="250dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:layout_marginBottom="@dimen/_10sdp"
@@ -290,11 +290,9 @@
                 <WebView
                     android:id="@+id/pchart_guru"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_180sdp"
+                    android:layout_height="250dp"
                     android:layout_gravity="center"
-                    android:layout_marginStart="@dimen/_27sdp"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_marginEnd="@dimen/_10sdp"
                     android:layout_marginBottom="@dimen/_10sdp"
                     android:foregroundGravity="center" />
 
@@ -330,11 +328,9 @@
                 <WebView
                     android:id="@+id/pchart_tendik"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_180sdp"
+                    android:layout_height="250dp"
                     android:layout_gravity="center"
-                    android:layout_marginStart="@dimen/_27sdp"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_marginEnd="@dimen/_10sdp"
                     android:layout_marginBottom="@dimen/_10sdp"
                     android:foregroundGravity="center" />
 

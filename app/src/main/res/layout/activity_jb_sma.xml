@@ -84,19 +84,19 @@
             </com.google.android.material.textfield.TextInputLayout>
 
 
-            <ImageView
-                android:id="@+id/btn_find"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:layout_weight="0.1"
-                android:background="@drawable/button_primary"
-                android:padding="@dimen/_5sdp"
-                android:src="@drawable/ic_search"
-                android:textAllCaps="false"
-                android:textColor="@color/white" />
+<!--            <ImageView-->
+<!--                android:id="@+id/btn_find"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="@dimen/_40sdp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginLeft="@dimen/_5sdp"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:layout_weight="0.1"-->
+<!--                android:background="@drawable/button_primary"-->
+<!--                android:padding="@dimen/_5sdp"-->
+<!--                android:src="@drawable/ic_search"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="@color/white" />-->
 
         </LinearLayout>
 

@@ -46,7 +46,7 @@ public class FindByNameActivity extends AppCompatActivity {
 //    ShimmerFrameLayout sfl_loading;
     NestedScrollView nsv_datasekolah;
 //    View v_dummy;
-//    LottieAnimationView av_loading;
+    LottieAnimationView av_loading;
     int limit = 10000, offset = 50;
 
     @Override
@@ -91,6 +91,7 @@ public class FindByNameActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                DataSekolah searchSekolah = new DataSekolah(etNamaSekolah.getText().length());
 
             }
 
@@ -100,24 +101,24 @@ public class FindByNameActivity extends AppCompatActivity {
             }
         });
 
-        nsv_datasekolah.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
-            @Override
-            public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
-                if (offset != 1) {
-                    if (scrollY == v.getChildAt(0).getMeasuredHeight() - v.getMeasuredHeight()) {
-                        if (sekolahs.size() > 0){
-                            sekolahArrayList = new ArrayList<>(sekolahs.size());
-                            sekolahArrayList.addAll(sekolahArrayList);
-                            sekolahAdapter = new SekolahAdapter(sekolahArrayList, context);
-                            rvSekolah.setAdapter(sekolahAdapter);
-                            offset += 10;
-                        }else {
-                            offset = -1;
-                        }
-                    }
-                }
-            }
-        });
+//        nsv_datasekolah.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
+//            @Override
+//            public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
+//                if (offset != 1) {
+//                    if (scrollY == v.getChildAt(0).getMeasuredHeight() - v.getMeasuredHeight()) {
+//                        if (sekolahs.size() > 0){
+//                            sekolahArrayList = new ArrayList<>(sekolahs.size());
+//                            sekolahArrayList.addAll(sekolahArrayList);
+//                            sekolahAdapter = new SekolahAdapter(sekolahArrayList, context);
+//                            rvSekolah.setAdapter(sekolahAdapter);
+//                            offset += 10;
+//                        }else {
+//                            offset = -1;
+//                        }
+//                    }
+//                }
+//            }
+//        });
     }
 
     @Override
@@ -127,8 +128,8 @@ public class FindByNameActivity extends AppCompatActivity {
     }
 
     public void getDataSekolah() {
-        offset = 50;
-        DataSekolah limit = new DataSekolah(10000, 50);
+//        offset = 50;
+        DataSekolah limit = new DataSekolah(500, 50);
 
 
         Call<SekolahResponse> call = RetrofitClient
@@ -141,7 +142,7 @@ public class FindByNameActivity extends AppCompatActivity {
             public void onResponse(Call<SekolahResponse> call, Response<SekolahResponse> response) {
                 SekolahResponse sekolahResponse = response.body();
                 Log.d("CHECK ISI DARI RESPONSE BODY", "ini dia --> " + response.body());
-                Toast.makeText(context, response.body().toString(), Toast.LENGTH_LONG).show();
+//                Toast.makeText(context, response.body().toString(), Toast.LENGTH_LONG).show();
                 if (sekolahResponse != null && sekolahResponse.getError() == null) {
                     Log.i("debug", "onResponse: SUCCESSFUL");
                     sekolahs = sekolahResponse.getSekolahs();
